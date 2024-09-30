@@ -1,0 +1,417 @@
+25-Sep-2024 08:48:34.157 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 08:48:36.901 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 08:48:38.524 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 08:51:23.889 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 08:51:23.897 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 08:51:35.424 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 08:51:37.309 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 08:51:38.544 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 08:58:14.817 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 08:58:14.817 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 08:58:22.672 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 08:58:24.472 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 08:58:25.695 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 08:59:40.088 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 08:59:40.104 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 09:22:20.713 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 09:22:22.616 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 09:22:23.822 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 09:22:43.214 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 09:22:43.229 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 09:22:59.866 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 09:23:01.695 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 09:23:02.956 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 09:24:16.385 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 09:24:16.391 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 09:24:31.237 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 09:24:33.052 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 09:24:34.188 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 09:26:09.132 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 09:26:09.140 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 09:26:17.091 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 09:26:19.137 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 09:26:20.340 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 09:28:31.897 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 09:28:31.913 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 09:29:03.770 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 09:29:05.711 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 09:29:06.932 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 09:29:24.455 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 09:29:24.470 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 09:33:28.635 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 09:33:30.511 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 09:33:31.709 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 09:36:17.217 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 09:36:17.225 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 09:47:31.630 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 09:47:33.417 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 09:47:34.549 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 09:48:36.519 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 09:48:36.534 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 09:51:02.639 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 09:51:04.423 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 09:51:05.590 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 09:54:16.936 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 09:54:16.942 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 10:04:22.244 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 10:04:24.321 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 10:04:25.557 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 10:04:34.331 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [FacesServlet] in context with path [/call-center] threw exception [/supervisors.xhtml @11,87 value="Welcome, #{supervisorController.Supervisor_name}!": Property [Supervisor_name] not found on type [com.eastnets.call_center.controller.SupervisorController$$EnhancerBySpringCGLIB$$14256ea5]] with root cause
+	javax.el.PropertyNotFoundException: Property [Supervisor_name] not found on type [com.eastnets.call_center.controller.SupervisorController$$EnhancerBySpringCGLIB$$14256ea5]
+		at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:253)
+		at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:206)
+		at javax.el.BeanELResolver.property(BeanELResolver.java:322)
+		at javax.el.BeanELResolver.getValue(BeanELResolver.java:93)
+		at com.sun.faces.el.DemuxCompositeELResolver._getValue(DemuxCompositeELResolver.java:180)
+		at com.sun.faces.el.DemuxCompositeELResolver.getValue(DemuxCompositeELResolver.java:208)
+		at org.apache.el.parser.AstValue.getValue(AstValue.java:160)
+		at org.apache.el.parser.AstDeferredExpression.getValue(AstDeferredExpression.java:42)
+		at org.apache.el.parser.AstCompositeExpression.getValue(AstCompositeExpression.java:47)
+		at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:151)
+		at com.sun.faces.facelets.el.TagValueExpression.getValue(TagValueExpression.java:115)
+		at javax.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:200)
+		at javax.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:187)
+		at javax.faces.component.UIOutput.getValue(UIOutput.java:179)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicInputRenderer.getValue(HtmlBasicInputRenderer.java:205)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.getCurrentValue(HtmlBasicRenderer.java:360)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.encodeEnd(HtmlBasicRenderer.java:171)
+		at javax.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:949)
+		at org.primefaces.renderkit.CoreRenderer.renderChild(CoreRenderer.java:85)
+		at org.primefaces.renderkit.CoreRenderer.renderChildren(CoreRenderer.java:67)
+		at org.primefaces.component.panel.PanelRenderer.encodeContent(PanelRenderer.java:218)
+		at org.primefaces.component.panel.PanelRenderer.encodeMarkup(PanelRenderer.java:132)
+		at org.primefaces.component.panel.PanelRenderer.encodeEnd(PanelRenderer.java:68)
+		at javax.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:949)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1912)
+		at javax.faces.render.Renderer.encodeChildren(Renderer.java:176)
+		at javax.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:918)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1905)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:491)
+		at com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:194)
+		at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:126)
+		at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:100)
+		at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:223)
+		at javax.faces.webapp.FacesServlet.service(FacesServlet.java:671)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+25-Sep-2024 10:04:49.779 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 10:04:49.794 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 10:06:58.746 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 10:07:00.549 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 10:07:01.682 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 10:07:18.465 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [FacesServlet] in context with path [/call-center] threw exception [/supervisors.xhtml @11,90 value="Welcome, #{supervisorController.getSupervisor_name}!": Property [getSupervisor_name] not found on type [com.eastnets.call_center.controller.SupervisorController$$EnhancerBySpringCGLIB$$af1a67ae]] with root cause
+	javax.el.PropertyNotFoundException: Property [getSupervisor_name] not found on type [com.eastnets.call_center.controller.SupervisorController$$EnhancerBySpringCGLIB$$af1a67ae]
+		at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:253)
+		at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:206)
+		at javax.el.BeanELResolver.property(BeanELResolver.java:322)
+		at javax.el.BeanELResolver.getValue(BeanELResolver.java:93)
+		at com.sun.faces.el.DemuxCompositeELResolver._getValue(DemuxCompositeELResolver.java:180)
+		at com.sun.faces.el.DemuxCompositeELResolver.getValue(DemuxCompositeELResolver.java:208)
+		at org.apache.el.parser.AstValue.getValue(AstValue.java:160)
+		at org.apache.el.parser.AstDeferredExpression.getValue(AstDeferredExpression.java:42)
+		at org.apache.el.parser.AstCompositeExpression.getValue(AstCompositeExpression.java:47)
+		at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:151)
+		at com.sun.faces.facelets.el.TagValueExpression.getValue(TagValueExpression.java:115)
+		at javax.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:200)
+		at javax.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:187)
+		at javax.faces.component.UIOutput.getValue(UIOutput.java:179)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicInputRenderer.getValue(HtmlBasicInputRenderer.java:205)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.getCurrentValue(HtmlBasicRenderer.java:360)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.encodeEnd(HtmlBasicRenderer.java:171)
+		at javax.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:949)
+		at org.primefaces.renderkit.CoreRenderer.renderChild(CoreRenderer.java:85)
+		at org.primefaces.renderkit.CoreRenderer.renderChildren(CoreRenderer.java:67)
+		at org.primefaces.component.panel.PanelRenderer.encodeContent(PanelRenderer.java:218)
+		at org.primefaces.component.panel.PanelRenderer.encodeMarkup(PanelRenderer.java:132)
+		at org.primefaces.component.panel.PanelRenderer.encodeEnd(PanelRenderer.java:68)
+		at javax.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:949)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1912)
+		at javax.faces.render.Renderer.encodeChildren(Renderer.java:176)
+		at javax.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:918)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1905)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:491)
+		at com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:194)
+		at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:126)
+		at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:100)
+		at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:223)
+		at javax.faces.webapp.FacesServlet.service(FacesServlet.java:671)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+25-Sep-2024 10:07:45.242 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 10:07:45.250 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 10:07:51.183 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 10:07:53.089 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 10:07:54.271 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 10:08:10.700 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [FacesServlet] in context with path [/call-center] threw exception [null] with root cause
+	java.lang.NullPointerException
+		at com.eastnets.call_center.controller.SupervisorController.getSupervisor_name(SupervisorController.java:46)
+		at com.eastnets.call_center.controller.SupervisorController$$FastClassBySpringCGLIB$$3d65ac90.invoke(<generated>)
+		at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:792)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+		at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:137)
+		at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:124)
+		at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+		at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:762)
+		at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:707)
+		at com.eastnets.call_center.controller.SupervisorController$$EnhancerBySpringCGLIB$$bc759ed9.getSupervisor_name(<generated>)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at javax.el.BeanELResolver.invoke(BeanELResolver.java:152)
+		at javax.el.CompositeELResolver.invoke(CompositeELResolver.java:120)
+		at org.apache.el.parser.AstValue.getValue(AstValue.java:151)
+		at org.apache.el.parser.AstDeferredExpression.getValue(AstDeferredExpression.java:42)
+		at org.apache.el.parser.AstCompositeExpression.getValue(AstCompositeExpression.java:47)
+		at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:151)
+		at com.sun.faces.facelets.el.TagValueExpression.getValue(TagValueExpression.java:115)
+		at javax.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:200)
+		at javax.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:187)
+		at javax.faces.component.UIOutput.getValue(UIOutput.java:179)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicInputRenderer.getValue(HtmlBasicInputRenderer.java:205)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.getCurrentValue(HtmlBasicRenderer.java:360)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.encodeEnd(HtmlBasicRenderer.java:171)
+		at javax.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:949)
+		at org.primefaces.renderkit.CoreRenderer.renderChild(CoreRenderer.java:85)
+		at org.primefaces.renderkit.CoreRenderer.renderChildren(CoreRenderer.java:67)
+		at org.primefaces.component.panel.PanelRenderer.encodeContent(PanelRenderer.java:218)
+		at org.primefaces.component.panel.PanelRenderer.encodeMarkup(PanelRenderer.java:132)
+		at org.primefaces.component.panel.PanelRenderer.encodeEnd(PanelRenderer.java:68)
+		at javax.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:949)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1912)
+		at javax.faces.render.Renderer.encodeChildren(Renderer.java:176)
+		at javax.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:918)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1905)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:491)
+		at com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:194)
+		at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:126)
+		at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:100)
+		at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:223)
+		at javax.faces.webapp.FacesServlet.service(FacesServlet.java:671)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+25-Sep-2024 10:18:41.864 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 10:18:41.871 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 10:20:54.753 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 10:20:56.697 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 10:20:57.864 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 10:21:23.347 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 10:21:23.357 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 10:21:57.924 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 10:21:59.729 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 10:22:00.899 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 10:22:07.743 SEVERE [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [FacesServlet] in context with path [/call-center] threw exception [/supervisors.xhtml @11,86 value="Welcome, #{supervisorController.supervisorName}!": Property [supervisorName] not found on type [com.eastnets.call_center.controller.SupervisorController$$EnhancerBySpringCGLIB$$7c70252d]] with root cause
+	javax.el.PropertyNotFoundException: Property [supervisorName] not found on type [com.eastnets.call_center.controller.SupervisorController$$EnhancerBySpringCGLIB$$7c70252d]
+		at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:253)
+		at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:206)
+		at javax.el.BeanELResolver.property(BeanELResolver.java:322)
+		at javax.el.BeanELResolver.getValue(BeanELResolver.java:93)
+		at com.sun.faces.el.DemuxCompositeELResolver._getValue(DemuxCompositeELResolver.java:180)
+		at com.sun.faces.el.DemuxCompositeELResolver.getValue(DemuxCompositeELResolver.java:208)
+		at org.apache.el.parser.AstValue.getValue(AstValue.java:160)
+		at org.apache.el.parser.AstDeferredExpression.getValue(AstDeferredExpression.java:42)
+		at org.apache.el.parser.AstCompositeExpression.getValue(AstCompositeExpression.java:47)
+		at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:151)
+		at com.sun.faces.facelets.el.TagValueExpression.getValue(TagValueExpression.java:115)
+		at javax.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:200)
+		at javax.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:187)
+		at javax.faces.component.UIOutput.getValue(UIOutput.java:179)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicInputRenderer.getValue(HtmlBasicInputRenderer.java:205)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.getCurrentValue(HtmlBasicRenderer.java:360)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.encodeEnd(HtmlBasicRenderer.java:171)
+		at javax.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:949)
+		at org.primefaces.renderkit.CoreRenderer.renderChild(CoreRenderer.java:85)
+		at org.primefaces.renderkit.CoreRenderer.renderChildren(CoreRenderer.java:67)
+		at org.primefaces.component.panel.PanelRenderer.encodeContent(PanelRenderer.java:218)
+		at org.primefaces.component.panel.PanelRenderer.encodeMarkup(PanelRenderer.java:132)
+		at org.primefaces.component.panel.PanelRenderer.encodeEnd(PanelRenderer.java:68)
+		at javax.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:949)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1912)
+		at javax.faces.render.Renderer.encodeChildren(Renderer.java:176)
+		at javax.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:918)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1905)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:491)
+		at com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:194)
+		at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:126)
+		at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:100)
+		at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:223)
+		at javax.faces.webapp.FacesServlet.service(FacesServlet.java:671)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+25-Sep-2024 10:22:11.961 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 10:22:11.977 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 11:23:19.690 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 11:23:21.562 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 11:23:22.768 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 11:23:30.985 SEVERE [http-nio-8080-exec-4] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [FacesServlet] in context with path [/call-center] threw exception [/supervisors.xhtml @11,87 value="Welcome, #{supervisorController.Supervisor_name}!": Property [Supervisor_name] not found on type [com.eastnets.call_center.controller.SupervisorController$$EnhancerBySpringCGLIB$$3ce79d80]] with root cause
+	javax.el.PropertyNotFoundException: Property [Supervisor_name] not found on type [com.eastnets.call_center.controller.SupervisorController$$EnhancerBySpringCGLIB$$3ce79d80]
+		at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:253)
+		at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:206)
+		at javax.el.BeanELResolver.property(BeanELResolver.java:322)
+		at javax.el.BeanELResolver.getValue(BeanELResolver.java:93)
+		at com.sun.faces.el.DemuxCompositeELResolver._getValue(DemuxCompositeELResolver.java:180)
+		at com.sun.faces.el.DemuxCompositeELResolver.getValue(DemuxCompositeELResolver.java:208)
+		at org.apache.el.parser.AstValue.getValue(AstValue.java:160)
+		at org.apache.el.parser.AstDeferredExpression.getValue(AstDeferredExpression.java:42)
+		at org.apache.el.parser.AstCompositeExpression.getValue(AstCompositeExpression.java:47)
+		at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:151)
+		at com.sun.faces.facelets.el.TagValueExpression.getValue(TagValueExpression.java:115)
+		at javax.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:200)
+		at javax.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:187)
+		at javax.faces.component.UIOutput.getValue(UIOutput.java:179)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicInputRenderer.getValue(HtmlBasicInputRenderer.java:205)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.getCurrentValue(HtmlBasicRenderer.java:360)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.encodeEnd(HtmlBasicRenderer.java:171)
+		at javax.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:949)
+		at org.primefaces.renderkit.CoreRenderer.renderChild(CoreRenderer.java:85)
+		at org.primefaces.renderkit.CoreRenderer.renderChildren(CoreRenderer.java:67)
+		at org.primefaces.component.panel.PanelRenderer.encodeContent(PanelRenderer.java:218)
+		at org.primefaces.component.panel.PanelRenderer.encodeMarkup(PanelRenderer.java:132)
+		at org.primefaces.component.panel.PanelRenderer.encodeEnd(PanelRenderer.java:68)
+		at javax.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:949)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1912)
+		at javax.faces.render.Renderer.encodeChildren(Renderer.java:176)
+		at javax.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:918)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1905)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:491)
+		at com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:194)
+		at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:126)
+		at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:100)
+		at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:223)
+		at javax.faces.webapp.FacesServlet.service(FacesServlet.java:671)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+25-Sep-2024 11:23:45.498 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 11:23:45.514 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 11:24:08.780 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 11:24:10.611 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 11:24:11.844 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 11:25:53.484 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 11:25:53.489 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 11:26:02.039 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 11:26:03.988 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 11:26:05.338 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 11:26:17.142 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 11:26:17.157 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 11:26:57.693 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 11:26:59.691 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 11:27:00.961 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 11:27:15.757 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 11:27:15.757 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext
+25-Sep-2024 17:11:41.784 INFO [main] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+25-Sep-2024 17:11:43.696 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring root WebApplicationContext
+25-Sep-2024 17:11:44.865 INFO [main] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcher'
+25-Sep-2024 17:12:36.891 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Destroying Spring FrameworkServlet 'dispatcher'
+25-Sep-2024 17:12:36.898 INFO [Thread-1] org.apache.catalina.core.ApplicationContext.log Closing Spring root WebApplicationContext

@@ -1,0 +1,3 @@
+0:0:0:0:0:0:0:1 - - [22/Sep/2024:14:51:52 +0300] "GET /call-center-management-system HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [22/Sep/2024:14:51:52 +0300] "GET /call-center-management-system/ HTTP/1.1" 200 226
+0:0:0:0:0:0:0:1 - - [22/Sep/2024:14:51:52 +0300] "GET /favicon.ico HTTP/1.1" 404 682

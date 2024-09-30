@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <title>Dashboard</title>
+</h:head>
+<h:body>
+    <h:form>
+        <p:growl id="growl" showDetail="true" />
+
+        <p:poll interval="10" update="agentsTable, callsTable, reportsTable" />
+
+        <h2>Call Center Agents</h2>
+        <p:dataTable id="agentsTable" value="#{dashboardController.agents}" var="agent">
+            <p:column headerText="ID">
+                <h:outputText value="#{agent.id}" />
+            </p:column>
+            <p:column headerText="Name">
+                <h:outputText value="#{agent.name}" />
+            </p:column>
+            <p:column headerText="Status">
+                <h:outputText value="#{agent.status}" />
+            </p:column>
+            <p:column headerText="Status Time">
+                <h:outputText value="#{agent.statusTime}" />
+            </p:column>
+            <p:column>
+                <p:commandButton value="Update Status" action="#{dashboardController.updateAgentStatus(agent.id, 'READY')}" update="@form" />
+            </p:column>
+        </p:dataTable>
+
+        <h2>Calls</h2>
+        <p:dataTable id="callsTable" value="#{dashboardController.calls}" var="call">
+            <p:column headerText="ID">
+                <h:outputText value="#{call.id}" />
+            </p:column>
+            <p:column headerText="Agent ID">
+                <h:outputText value="#{call.agentId}" />
+            </p:column>
+            <p:column headerText="Start Time">
+                <h:outputText value="#{call.startTime}" />
+            </p:column>
+            <p:column headerText="End Time">
+                <h:outputText value="#{call.endTime}" />
+            </p:column>
+            <p:column headerText="Status">
+                <h:outputText value="#{call.status}" />
+            </p:column>
+            <p:column headerText="Duration">
+                <h:outputText value="#{call.callDuration}" />
+            </p:column>
+            <p:column>
+                <p:commandButton value="Close Call" action="#{dashboardController.closeCall(call.id)}" update="@form" />
+            </p:column>
+        </p:dataTable>
+
+        <h2>Daily Performance Reports</h2>
+        <p:dataTable id="reportsTable" value="#{dashboardController.reports}" var="report">
+            <p:column headerText="ID">
+                <h:outputText value="#{report.id}" />
+            </p:column>
+            <p:column headerText="Agent ID">
+                <h:outputText value="#{report.agentId}" />
+            </p:column>
+            <p:column headerText="Report Date">
+                <h:outputText value="#{report.reportDate}" />
+            </p:column>
+            <p:column headerText="Total Calls">
+                <h:outputText value="#{report.totalCalls}" />
+            </p:column>
+            <p:column headerText="Total Talk Time">
+                <h:outputText value="#{report.totalTalkTime}" />
+            </p:column>
+            <p:column headerText="Longest Talk Time">
+                <h:outputText value="#{report.longestTalkTime}" />
+            </p:column>
+            <p:column headerText="Shortest Talk Time">
+                <h:outputText value="#{report.shortestTalkTime}" />
+            </p:column>
+            <p:column headerText="Total Not Ready Time">
+                <h:outputText value="#{report.totalNotReadyTime}" />
+            </p:column>
+            <p:column headerText="Average Calls">
+                <h:outputText value="#{report.averageCalls}" />
+            </p:column>
+        </p:dataTable>
+
+        <p:commandButton value="Generate Daily Report" action="#{dashboardController.generateDailyReport}" update="@form" />
+    </h:form>
+</h:body>
+</html>
