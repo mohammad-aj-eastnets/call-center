@@ -10,7 +10,6 @@ import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Timestamp;
 import java.util.List;
 
 @Repository
@@ -29,7 +28,8 @@ public class CallCenterAgentRepository implements ICallCenterAgentRepository {
             agent.setId(rs.getLong("agentID"));
             agent.setName(rs.getString("agent"));
             agent.setStatus(AgentStatus.valueOf(rs.getString("status")));
-            agent.setStatusTime(rs.getTimestamp("time"));
+            long durationInSeconds = rs.getLong("statusDurationSeconds");
+            agent.updateStatusDuration(durationInSeconds);
             agent.setTotalNumberOfCalls(rs.getInt("totalNumberOfCalls"));
             return agent;
         }
@@ -37,7 +37,7 @@ public class CallCenterAgentRepository implements ICallCenterAgentRepository {
 
     @Override
     public CallCenterAgent findById(Long id) {
-        String sql = "SELECT * FROM Agents WHERE agentID = :id";
+        String sql = "SELECT *, DATEDIFF(SECOND, time, CURRENT_TIMESTAMP) AS statusDurationSeconds FROM Agents WHERE agentID = :id";
         MapSqlParameterSource params = new MapSqlParameterSource();
         params.addValue("id", id);
         List<CallCenterAgent> agents = namedParameterJdbcTemplate.query(sql, params, new CallCenterAgentMapper());
@@ -46,18 +46,17 @@ public class CallCenterAgentRepository implements ICallCenterAgentRepository {
 
     @Override
     public List<CallCenterAgent> findAll() {
-        String sql = "SELECT * FROM Agents";
+        String sql = "SELECT *, DATEDIFF(SECOND, time, CURRENT_TIMESTAMP) AS statusDurationSeconds FROM Agents";
         return namedParameterJdbcTemplate.query(sql, new CallCenterAgentMapper());
     }
 
     @Override
     public void save(CallCenterAgent agent) {
-        String sql = "INSERT INTO Agents (agentID, status, agent, time, totalNumberOfCalls) VALUES (:agentID, :status, :agent, :time, :totalNumberOfCalls)";
+        String sql = "INSERT INTO Agents (agentID, status, agent, time, totalNumberOfCalls) VALUES (:agentID, :status, :agent, CURRENT_TIMESTAMP, :totalNumberOfCalls)";
         MapSqlParameterSource params = new MapSqlParameterSource();
         params.addValue("agentID", agent.getId());
         params.addValue("status", agent.getStatus().name());
         params.addValue("agent", agent.getName());
-        params.addValue("time", agent.getStatusTime());
         params.addValue("totalNumberOfCalls", agent.getTotalNumberOfCalls());
         namedParameterJdbcTemplate.update(sql, params);
     }
@@ -72,7 +71,7 @@ public class CallCenterAgentRepository implements ICallCenterAgentRepository {
 
     @Override
     public Long getStatusDuration(Long id, String status) {
-        String sql = "SELECT SUM(TIMESTAMPDIFF(SECOND, time, CURRENT_TIMESTAMP)) " +
+        String sql = "SELECT SUM(DATEDIFF(SECOND, time, CURRENT_TIMESTAMP)) " +
                 "FROM Agents WHERE agentID = :id AND status = :status";
         MapSqlParameterSource params = new MapSqlParameterSource();
         params.addValue("id", id);
@@ -83,10 +82,9 @@ public class CallCenterAgentRepository implements ICallCenterAgentRepository {
 
     @Override
     public boolean updateStatus(Long id, AgentStatus newStatus) {
-        String sql = "UPDATE Agents SET status = :status, time = :time WHERE agentID = :id";
+        String sql = "UPDATE Agents SET status = :status, time = CURRENT_TIMESTAMP WHERE agentID = :id";
         MapSqlParameterSource params = new MapSqlParameterSource();
         params.addValue("status", newStatus.name());
-        params.addValue("time", new Timestamp(System.currentTimeMillis()));
         params.addValue("id", id);
         return namedParameterJdbcTemplate.update(sql, params) > 0;
     }

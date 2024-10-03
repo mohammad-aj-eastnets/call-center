@@ -2,21 +2,17 @@ package com.eastnets.call_center.model;
 
 import com.eastnets.call_center.enums.AgentStatus;
 
-import java.sql.Timestamp;
-
 public class CallCenterAgent {
     private Long id;
     private String name;
     private AgentStatus status;
-    private Timestamp statusTime;
+    private long statusDurationSeconds;
+    private long statusDurationMinutes;
+    private long statusDurationHours;
     private Long totalNumberOfCalls;
 
-    public Timestamp getStatusTime() {
-        return statusTime;
-    }
-
-    public void setStatusTime(Timestamp statusTime) {
-        this.statusTime = statusTime;
+    public CallCenterAgent() {
+        resetStatusDuration();
     }
 
     public Long getId() {
@@ -41,6 +37,19 @@ public class CallCenterAgent {
 
     public void setStatus(AgentStatus status) {
         this.status = status;
+        resetStatusDuration();
+    }
+
+    public long getStatusDurationSeconds() {
+        return statusDurationSeconds;
+    }
+
+    public long getStatusDurationMinutes() {
+        return statusDurationMinutes;
+    }
+
+    public long getStatusDurationHours() {
+        return statusDurationHours;
     }
 
     public void setTotalNumberOfCalls(long totalNumberOfCalls) {
@@ -49,5 +58,17 @@ public class CallCenterAgent {
 
     public long getTotalNumberOfCalls() {
         return totalNumberOfCalls;
+    }
+
+    private void resetStatusDuration() {
+        this.statusDurationSeconds = 0;
+        this.statusDurationMinutes = 0;
+        this.statusDurationHours = 0;
+    }
+
+    public void updateStatusDuration(long durationInSeconds) {
+        this.statusDurationSeconds = durationInSeconds % 60;
+        this.statusDurationMinutes = (durationInSeconds / 60) % 60;
+        this.statusDurationHours = durationInSeconds / 3600;
     }
 }

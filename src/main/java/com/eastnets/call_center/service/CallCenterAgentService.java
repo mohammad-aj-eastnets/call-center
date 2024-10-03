@@ -46,7 +46,12 @@ public class CallCenterAgentService implements ICallCenterAgentService {
 
     @Override
     public boolean changeAgentStatus(Long id, AgentStatus newStatus) {
-        return callCenterAgentRepository.updateStatus(id, newStatus);
+        CallCenterAgent agent = getAgentById(id);
+        if (agent != null) {
+            agent.setStatus(newStatus);
+            return callCenterAgentRepository.updateStatus(id, newStatus);
+        }
+        return false;
     }
 
     @Override

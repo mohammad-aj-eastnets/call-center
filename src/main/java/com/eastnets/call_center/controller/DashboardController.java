@@ -1,6 +1,5 @@
 package com.eastnets.call_center.controller;
 
-import com.eastnets.call_center.enums.AgentStatus;
 import com.eastnets.call_center.model.Call;
 import com.eastnets.call_center.model.CallCenterAgent;
 import com.eastnets.call_center.serviceInterfaces.ICallCenterAgentService;
@@ -57,12 +56,6 @@ public class DashboardController implements Serializable {
     public void loadDashboardData() {
         this.agents = agentService.getAllAgents();
         this.calls = callService.getAllCalls();
-    }
-
-    public String getAgentById(Long id) {
-        CallCenterAgent agent = agentService.getAgentById(id);
-        FacesContext.getCurrentInstance().getExternalContext().getRequestMap().put("agent", agent);
-        return "agent";
     }
 
     public String toggleAgentStatus(Long id) {

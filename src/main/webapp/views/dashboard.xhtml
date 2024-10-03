@@ -4,6 +4,11 @@
       xmlns:p="http://primefaces.org/ui">
 <h:head>
     <title>Dashboard</title>
+    <script type="text/javascript">
+        function resetFocus() {
+            document.activeElement.blur();
+        }
+    </script>
 </h:head>
 <h:body>
     <h:form id="mainForm">
@@ -22,16 +27,16 @@
             <p:column headerText="Status">
                 <h:outputText value="#{agent.status}" />
             </p:column>
-            <p:column headerText="Status Time">
-                <h:outputText value="#{agent.statusTime}" />
+            <p:column headerText="Status Duration">
+                <h:outputText value="#{agent.statusDurationHours}h #{agent.statusDurationMinutes}m #{agent.statusDurationSeconds}s" />
             </p:column>
             <p:column headerText="Total Calls">
                 <h:outputText value="#{agent.totalNumberOfCalls}" />
             </p:column>
             <p:column>
                 <p:commandButton value="Toggle Status" action="#{dashboardController.toggleAgentStatus(agent.id)}" update=":mainForm:agentsTable"
-                                 disabled="#{agent.status == 'ON_CALL'}">
-                    <p:ajax update=":mainForm:agentsTable" />
+                                 disabled="#{agent.status == 'ON_CALL'}" oncomplete="resetFocus()">
+                    <p:ajax update=":mainForm:agentsTable" oncomplete="resetFocus()" />
                 </p:commandButton>
             </p:column>
         </p:dataTable>
