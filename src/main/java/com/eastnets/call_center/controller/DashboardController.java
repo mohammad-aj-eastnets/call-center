@@ -1,12 +1,12 @@
 package com.eastnets.call_center.controller;
 
-import com.eastnets.call_center.model.CallCenterAgent;
+import com.eastnets.call_center.enums.AgentStatus;
 import com.eastnets.call_center.model.Call;
-import com.eastnets.call_center.model.GeneratedReport;
+import com.eastnets.call_center.model.CallCenterAgent;
 import com.eastnets.call_center.serviceInterfaces.ICallCenterAgentService;
 import com.eastnets.call_center.serviceInterfaces.ICallService;
-import com.eastnets.call_center.serviceInterfaces.IGeneratedReportService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.context.annotation.SessionScope;
 
@@ -23,11 +23,9 @@ public class DashboardController implements Serializable {
 
     private ICallCenterAgentService agentService;
     private ICallService callService;
-    private IGeneratedReportService reportService;
 
     private List<CallCenterAgent> agents;
     private List<Call> calls;
-    private List<GeneratedReport> reports;
 
     public DashboardController() {
         // No-argument constructor
@@ -43,11 +41,6 @@ public class DashboardController implements Serializable {
         this.callService = callService;
     }
 
-    @Autowired
-    public void setReportService(IGeneratedReportService reportService) {
-        this.reportService = reportService;
-    }
-
     @PostConstruct
     public void init() {
         loadDashboardData();
@@ -61,14 +54,9 @@ public class DashboardController implements Serializable {
         return calls;
     }
 
-    public List<GeneratedReport> getReports() {
-        return reports;
-    }
-
-    private void loadDashboardData() {
+    public void loadDashboardData() {
         this.agents = agentService.getAllAgents();
         this.calls = callService.getAllCalls();
-        this.reports = reportService.getAllReports();
     }
 
     public String getAgentById(Long id) {
@@ -77,31 +65,26 @@ public class DashboardController implements Serializable {
         return "agent";
     }
 
-    public String updateAgentStatus(Long id, String status) {
-        CallCenterAgent agent = agentService.updateAgentStatus(id, status);
-        FacesContext.getCurrentInstance().getExternalContext().getRequestMap().put("agent", agent);
-        return "agent";
+    public String toggleAgentStatus(Long id) {
+        boolean updated = agentService.toggleAgentStatus(id);
+        if (updated) {
+            loadDashboardData(); // Reload the data after status change
+            return null; // Stay on the same page
+        }
+        // Handle the case where the status could not be updated
+        FacesContext.getCurrentInstance().getExternalContext().getRequestMap().put("error", "Cannot update status while agent is on a call.");
+        return "error";
     }
 
-    public String simulateCall(Long agentId) {
-        Call call = callService.simulateCall(agentId);
-        FacesContext.getCurrentInstance().getExternalContext().getRequestMap().put("call", call);
-        return "call";
+    @Scheduled(fixedRate = 10000) // Run every 10 seconds
+    public void generateCalls() {
+        callService.generateCalls();
+        loadDashboardData(); // Refresh data
     }
 
-    public String closeCall(Long id) {
-        Call call = callService.closeCall(id);
-        FacesContext.getCurrentInstance().getExternalContext().getRequestMap().put("call", call);
-        return "call";
-    }
-
-    public String generateDailyReport() {
-        this.reports = reportService.getAllReports();
-        FacesContext.getCurrentInstance().getExternalContext().getRequestMap().put("reports", reports);
-        return "reports";
-    }
-
-    public long getStatusDuration(Long id, String status) {
-        return agentService.getStatusDuration(id, status);
+    @Scheduled(fixedRate = 60000) // Run every 60 seconds
+    public void closeLongestCalls() {
+        callService.closeLongestCalls();
+        loadDashboardData(); // Refresh data
     }
 }

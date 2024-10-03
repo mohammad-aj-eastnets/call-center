@@ -22465,3 +22465,1240 @@ Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: 'TIMESTAMPDIFF' is n
 30-Sep-2024 15:26:58.122 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [call-center] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
 30-Sep-2024 15:26:58.132 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 30-Sep-2024 15:26:58.150 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:03:24.325 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.95
+30-Sep-2024 17:03:24.328 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 18:07:47 UTC
+30-Sep-2024 17:03:24.328 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.95.0
+30-Sep-2024 17:03:24.328 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+30-Sep-2024 17:03:24.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Sep-2024 17:03:24.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Sep-2024 17:03:24.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\MZiad\.jdks\corretto-11.0.24
+30-Sep-2024 17:03:24.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.24+8-LTS
+30-Sep-2024 17:03:24.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+30-Sep-2024 17:03:24.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:03:24.329 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:03:24.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Sep-2024 17:03:24.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Sep-2024 17:03:24.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Sep-2024 17:03:24.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Sep-2024 17:03:24.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Sep-2024 17:03:24.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:03:24.339 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:03:24.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\MZiad\IdeaProjects\call-center\temp
+30-Sep-2024 17:03:24.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\MZiad\IdeaProjects\call-center\conf\logging.properties
+30-Sep-2024 17:03:24.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Sep-2024 17:03:24.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\lib\idea_rt.jar=58714:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\bin
+30-Sep-2024 17:03:24.340 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+30-Sep-2024 17:03:24.403 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+30-Sep-2024 17:03:24.403 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+30-Sep-2024 17:03:24.404 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+30-Sep-2024 17:03:24.409 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+30-Sep-2024 17:03:24.748 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:03:24.775 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [668] milliseconds
+30-Sep-2024 17:03:24.852 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Sep-2024 17:03:24.852 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.95]
+30-Sep-2024 17:03:24.862 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml]
+30-Sep-2024 17:03:28.561 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Sep-2024 17:03:28.788 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+30-Sep-2024 17:03:28.829 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 3.1.9 (Final)
+30-Sep-2024 17:03:29.041 WARN [main] org.jboss.weld.environment.servlet.WeldServletLifecycle.initialize WELD-ENV-000028: Weld initialization skipped - no bean archive found
+30-Sep-2024 17:03:29.042 INFO [main] org.jboss.weld.environment.servlet.Listener.contextInitialized WELD-ENV-001006: org.jboss.weld.environment.servlet.EnhancedListener used to initialize Weld
+30-Sep-2024 17:03:29.103 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 2.3.9 ( 20190401-1936 77894020e94a338c9701619b7ef6e9871c5a9079) for context '/call-center'
+30-Sep-2024 17:03:29.320 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+30-Sep-2024 17:03:30.877 INFO [main] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 10.0.0
+30-Sep-2024 17:03:30.880 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Sep-2024 17:03:31.924 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext initialized in 1043 ms
+30-Sep-2024 17:03:32.106 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [182] milliseconds.
+30-Sep-2024 17:03:32.130 SEVERE [main] org.apache.catalina.session.StandardManager.startInternal Exception loading sessions from persistent storage
+	java.io.InvalidClassException: com.eastnets.call_center.controller.DashboardController; local class incompatible: stream classdesc serialVersionUID = -7463968306491981515, local class serialVersionUID = 5574384265502866080
+		at java.base/java.io.ObjectStreamClass.initNonProxy(ObjectStreamClass.java:560)
+		at java.base/java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:2020)
+		at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1870)
+		at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2201)
+		at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1687)
+		at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:489)
+		at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:447)
+		at org.apache.catalina.session.StandardSession.doReadObject(StandardSession.java:1268)
+		at org.apache.catalina.session.StandardSession.readObjectData(StandardSession.java:846)
+		at org.apache.catalina.session.StandardManager.doLoad(StandardManager.java:210)
+		at org.apache.catalina.session.StandardManager.load(StandardManager.java:156)
+		at org.apache.catalina.session.StandardManager.startInternal(StandardManager.java:345)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4463)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:603)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:680)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1844)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:575)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:466)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1584)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:312)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:385)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:332)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:776)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:721)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:211)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:735)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+30-Sep-2024 17:03:32.142 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+30-Sep-2024 17:03:32.460 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 318 ms
+30-Sep-2024 17:03:32.478 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml] has finished in [7,616] ms
+30-Sep-2024 17:03:32.483 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:03:32.496 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [7720] milliseconds
+30-Sep-2024 17:04:49.211 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:04:49.586 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Sep-2024 17:04:49.611 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [call-center] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+30-Sep-2024 17:04:49.623 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:04:49.642 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:04:53.304 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.95
+30-Sep-2024 17:04:53.307 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 18:07:47 UTC
+30-Sep-2024 17:04:53.307 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.95.0
+30-Sep-2024 17:04:53.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+30-Sep-2024 17:04:53.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Sep-2024 17:04:53.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Sep-2024 17:04:53.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\MZiad\.jdks\corretto-11.0.24
+30-Sep-2024 17:04:53.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.24+8-LTS
+30-Sep-2024 17:04:53.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+30-Sep-2024 17:04:53.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:04:53.308 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:04:53.319 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Sep-2024 17:04:53.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Sep-2024 17:04:53.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Sep-2024 17:04:53.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Sep-2024 17:04:53.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Sep-2024 17:04:53.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:04:53.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:04:53.320 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\MZiad\IdeaProjects\call-center\temp
+30-Sep-2024 17:04:53.321 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\MZiad\IdeaProjects\call-center\conf\logging.properties
+30-Sep-2024 17:04:53.321 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Sep-2024 17:04:53.321 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\lib\idea_rt.jar=58771:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\bin
+30-Sep-2024 17:04:53.321 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+30-Sep-2024 17:04:53.325 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+30-Sep-2024 17:04:53.325 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+30-Sep-2024 17:04:53.325 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+30-Sep-2024 17:04:53.333 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+30-Sep-2024 17:04:53.702 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:04:53.729 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [651] milliseconds
+30-Sep-2024 17:04:53.805 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Sep-2024 17:04:53.805 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.95]
+30-Sep-2024 17:04:53.815 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml]
+30-Sep-2024 17:04:58.000 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Sep-2024 17:04:58.252 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+30-Sep-2024 17:04:58.292 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 3.1.9 (Final)
+30-Sep-2024 17:04:58.485 WARN [main] org.jboss.weld.environment.servlet.WeldServletLifecycle.initialize WELD-ENV-000028: Weld initialization skipped - no bean archive found
+30-Sep-2024 17:04:58.488 INFO [main] org.jboss.weld.environment.servlet.Listener.contextInitialized WELD-ENV-001006: org.jboss.weld.environment.servlet.EnhancedListener used to initialize Weld
+30-Sep-2024 17:04:58.554 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 2.3.9 ( 20190401-1936 77894020e94a338c9701619b7ef6e9871c5a9079) for context '/call-center'
+30-Sep-2024 17:04:58.734 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+30-Sep-2024 17:05:00.390 INFO [main] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 10.0.0
+30-Sep-2024 17:05:00.392 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Sep-2024 17:05:01.468 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext initialized in 1076 ms
+30-Sep-2024 17:05:01.653 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [183] milliseconds.
+30-Sep-2024 17:05:01.658 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+30-Sep-2024 17:05:01.961 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 303 ms
+30-Sep-2024 17:05:01.972 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml] has finished in [8,157] ms
+30-Sep-2024 17:05:01.978 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:05:01.989 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [8260] milliseconds
+30-Sep-2024 17:05:08.833 SEVERE [http-nio-8080-exec-2] com.sun.faces.application.view.FaceletViewHandlingStrategy.handleRenderException Error Rendering View[/views/dashboard.xhtml]
+	javax.el.PropertyNotFoundException: /views/dashboard.xhtml @12,82 value="#{dashboardController.agent.id}": Property [agent] not found on type [com.eastnets.call_center.controller.DashboardController$$EnhancerBySpringCGLIB$$82e21627]
+		at com.sun.faces.facelets.el.TagValueExpression.getValue(TagValueExpression.java:117)
+		at javax.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:200)
+		at javax.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:187)
+		at javax.faces.component.UIOutput.getValue(UIOutput.java:179)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicInputRenderer.getValue(HtmlBasicInputRenderer.java:205)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.getCurrentValue(HtmlBasicRenderer.java:360)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.encodeEnd(HtmlBasicRenderer.java:171)
+		at javax.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:949)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.encodeRecursive(HtmlBasicRenderer.java:317)
+		at com.sun.faces.renderkit.html_basic.GridRenderer.renderRow(GridRenderer.java:186)
+		at com.sun.faces.renderkit.html_basic.GridRenderer.encodeChildren(GridRenderer.java:129)
+		at javax.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:918)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1905)
+		at javax.faces.render.Renderer.encodeChildren(Renderer.java:176)
+		at javax.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:918)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1905)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:491)
+		at com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:194)
+		at javax.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:151)
+		at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:126)
+		at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:100)
+		at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:223)
+		at javax.faces.webapp.FacesServlet.service(FacesServlet.java:671)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+	Caused by: javax.el.PropertyNotFoundException: Property [agent] not found on type [com.eastnets.call_center.controller.DashboardController$$EnhancerBySpringCGLIB$$82e21627]
+		at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:253)
+		at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:206)
+		at javax.el.BeanELResolver.property(BeanELResolver.java:322)
+		at javax.el.BeanELResolver.getValue(BeanELResolver.java:93)
+		at com.sun.faces.el.DemuxCompositeELResolver._getValue(DemuxCompositeELResolver.java:180)
+		at com.sun.faces.el.DemuxCompositeELResolver.getValue(DemuxCompositeELResolver.java:208)
+		at org.apache.el.parser.AstValue.getValue(AstValue.java:160)
+		at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:151)
+		at com.sun.faces.facelets.el.TagValueExpression.getValue(TagValueExpression.java:115)
+		... 46 more
+30-Sep-2024 17:05:44.783 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:05:45.158 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Sep-2024 17:05:45.193 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [call-center] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+30-Sep-2024 17:05:45.205 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:05:45.224 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:05:50.971 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.95
+30-Sep-2024 17:05:50.974 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 18:07:47 UTC
+30-Sep-2024 17:05:50.974 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.95.0
+30-Sep-2024 17:05:50.974 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+30-Sep-2024 17:05:50.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Sep-2024 17:05:50.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Sep-2024 17:05:50.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\MZiad\.jdks\corretto-11.0.24
+30-Sep-2024 17:05:50.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.24+8-LTS
+30-Sep-2024 17:05:50.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+30-Sep-2024 17:05:50.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:05:50.975 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:05:50.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Sep-2024 17:05:50.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Sep-2024 17:05:50.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Sep-2024 17:05:50.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Sep-2024 17:05:50.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Sep-2024 17:05:50.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:05:50.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:05:50.987 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\MZiad\IdeaProjects\call-center\temp
+30-Sep-2024 17:05:50.988 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\MZiad\IdeaProjects\call-center\conf\logging.properties
+30-Sep-2024 17:05:50.988 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Sep-2024 17:05:50.988 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\lib\idea_rt.jar=58811:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\bin
+30-Sep-2024 17:05:50.988 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+30-Sep-2024 17:05:50.992 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+30-Sep-2024 17:05:50.992 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+30-Sep-2024 17:05:50.992 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+30-Sep-2024 17:05:51.008 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+30-Sep-2024 17:05:51.384 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:05:51.412 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [664] milliseconds
+30-Sep-2024 17:05:51.526 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Sep-2024 17:05:51.526 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.95]
+30-Sep-2024 17:05:51.541 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml]
+30-Sep-2024 17:05:55.663 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Sep-2024 17:05:55.944 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+30-Sep-2024 17:05:55.995 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 3.1.9 (Final)
+30-Sep-2024 17:05:56.206 WARN [main] org.jboss.weld.environment.servlet.WeldServletLifecycle.initialize WELD-ENV-000028: Weld initialization skipped - no bean archive found
+30-Sep-2024 17:05:56.208 INFO [main] org.jboss.weld.environment.servlet.Listener.contextInitialized WELD-ENV-001006: org.jboss.weld.environment.servlet.EnhancedListener used to initialize Weld
+30-Sep-2024 17:05:56.283 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 2.3.9 ( 20190401-1936 77894020e94a338c9701619b7ef6e9871c5a9079) for context '/call-center'
+30-Sep-2024 17:05:56.487 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+30-Sep-2024 17:05:58.275 INFO [main] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 10.0.0
+30-Sep-2024 17:05:58.278 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Sep-2024 17:05:59.498 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext initialized in 1220 ms
+30-Sep-2024 17:05:59.710 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [211] milliseconds.
+30-Sep-2024 17:05:59.735 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+30-Sep-2024 17:06:00.066 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 331 ms
+30-Sep-2024 17:06:00.077 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml] has finished in [8,536] ms
+30-Sep-2024 17:06:00.082 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:06:00.096 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [8684] milliseconds
+30-Sep-2024 17:06:06.833 SEVERE [http-nio-8080-exec-4] com.sun.faces.application.view.FaceletViewHandlingStrategy.handleRenderException Error Rendering View[/views/dashboard.xhtml]
+	javax.el.PropertyNotFoundException: /views/dashboard.xhtml @34,86 value="#{dashboardController.calls}": Property [calls] not found on type [com.eastnets.call_center.controller.DashboardController$$EnhancerBySpringCGLIB$$d4a8567a]
+		at com.sun.faces.facelets.el.TagValueExpression.getValue(TagValueExpression.java:117)
+		at javax.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:200)
+		at javax.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:187)
+		at javax.faces.component.UIData.getValue(UIData.java:766)
+		at org.primefaces.component.api.UIData.lambda$isLazy$0(UIData.java:83)
+		at org.primefaces.util.ComponentUtils.eval(ComponentUtils.java:492)
+		at org.primefaces.component.api.UIData.isLazy(UIData.java:83)
+		at org.primefaces.component.datatable.DataTableRenderer.preRender(DataTableRenderer.java:113)
+		at org.primefaces.component.datatable.DataTableRenderer.encodeEnd(DataTableRenderer.java:93)
+		at javax.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:949)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1912)
+		at javax.faces.render.Renderer.encodeChildren(Renderer.java:176)
+		at javax.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:918)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1905)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:491)
+		at com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:194)
+		at javax.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:151)
+		at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:126)
+		at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:100)
+		at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:223)
+		at javax.faces.webapp.FacesServlet.service(FacesServlet.java:671)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+	Caused by: javax.el.PropertyNotFoundException: Property [calls] not found on type [com.eastnets.call_center.controller.DashboardController$$EnhancerBySpringCGLIB$$d4a8567a]
+		at javax.el.BeanELResolver$BeanProperties.get(BeanELResolver.java:253)
+		at javax.el.BeanELResolver$BeanProperties.access$300(BeanELResolver.java:206)
+		at javax.el.BeanELResolver.property(BeanELResolver.java:322)
+		at javax.el.BeanELResolver.getValue(BeanELResolver.java:93)
+		at com.sun.faces.el.DemuxCompositeELResolver._getValue(DemuxCompositeELResolver.java:180)
+		at com.sun.faces.el.DemuxCompositeELResolver.getValue(DemuxCompositeELResolver.java:208)
+		at org.apache.el.parser.AstValue.getValue(AstValue.java:160)
+		at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:151)
+		at com.sun.faces.facelets.el.TagValueExpression.getValue(TagValueExpression.java:115)
+		... 44 more
+30-Sep-2024 17:07:10.205 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:07:10.641 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Sep-2024 17:07:10.671 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [call-center] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+30-Sep-2024 17:07:10.681 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:07:10.697 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:07:14.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.95
+30-Sep-2024 17:07:14.571 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 18:07:47 UTC
+30-Sep-2024 17:07:14.571 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.95.0
+30-Sep-2024 17:07:14.571 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+30-Sep-2024 17:07:14.571 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Sep-2024 17:07:14.571 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Sep-2024 17:07:14.571 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\MZiad\.jdks\corretto-11.0.24
+30-Sep-2024 17:07:14.571 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.24+8-LTS
+30-Sep-2024 17:07:14.572 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+30-Sep-2024 17:07:14.572 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:07:14.572 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:07:14.586 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Sep-2024 17:07:14.586 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Sep-2024 17:07:14.587 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Sep-2024 17:07:14.587 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Sep-2024 17:07:14.587 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Sep-2024 17:07:14.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:07:14.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:07:14.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\MZiad\IdeaProjects\call-center\temp
+30-Sep-2024 17:07:14.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\MZiad\IdeaProjects\call-center\conf\logging.properties
+30-Sep-2024 17:07:14.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Sep-2024 17:07:14.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\lib\idea_rt.jar=58842:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\bin
+30-Sep-2024 17:07:14.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+30-Sep-2024 17:07:14.592 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+30-Sep-2024 17:07:14.592 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+30-Sep-2024 17:07:14.592 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+30-Sep-2024 17:07:14.601 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+30-Sep-2024 17:07:15.090 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:07:15.133 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [805] milliseconds
+30-Sep-2024 17:07:15.245 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Sep-2024 17:07:15.246 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.95]
+30-Sep-2024 17:07:15.264 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml]
+30-Sep-2024 17:07:17.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.95
+30-Sep-2024 17:07:17.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 18:07:47 UTC
+30-Sep-2024 17:07:17.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.95.0
+30-Sep-2024 17:07:17.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+30-Sep-2024 17:07:17.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Sep-2024 17:07:17.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Sep-2024 17:07:17.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\MZiad\.jdks\corretto-11.0.24
+30-Sep-2024 17:07:17.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.24+8-LTS
+30-Sep-2024 17:07:17.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+30-Sep-2024 17:07:17.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:07:17.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:07:17.198 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Sep-2024 17:07:17.198 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Sep-2024 17:07:17.198 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Sep-2024 17:07:17.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Sep-2024 17:07:17.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Sep-2024 17:07:17.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:07:17.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:07:17.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\MZiad\IdeaProjects\call-center\temp
+30-Sep-2024 17:07:17.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\MZiad\IdeaProjects\call-center\conf\logging.properties
+30-Sep-2024 17:07:17.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Sep-2024 17:07:17.200 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\lib\idea_rt.jar=58847:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\bin
+30-Sep-2024 17:07:17.200 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+30-Sep-2024 17:07:17.204 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+30-Sep-2024 17:07:17.204 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+30-Sep-2024 17:07:17.204 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+30-Sep-2024 17:07:17.213 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+30-Sep-2024 17:07:17.675 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:07:17.696 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1027)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:525)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:986)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:686)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:709)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:459)
+		at java.base/sun.nio.ch.Net.bind(Net.java:448)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:268)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:223)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1373)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1386)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:663)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1025)
+		... 13 more
+30-Sep-2024 17:07:17.699 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [814] milliseconds
+30-Sep-2024 17:07:17.805 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Sep-2024 17:07:17.806 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.95]
+30-Sep-2024 17:07:17.821 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml]
+30-Sep-2024 17:07:20.798 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Sep-2024 17:07:21.101 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+30-Sep-2024 17:07:21.160 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 3.1.9 (Final)
+30-Sep-2024 17:07:21.470 WARN [main] org.jboss.weld.environment.servlet.WeldServletLifecycle.initialize WELD-ENV-000028: Weld initialization skipped - no bean archive found
+30-Sep-2024 17:07:21.473 INFO [main] org.jboss.weld.environment.servlet.Listener.contextInitialized WELD-ENV-001006: org.jboss.weld.environment.servlet.EnhancedListener used to initialize Weld
+30-Sep-2024 17:07:21.577 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 2.3.9 ( 20190401-1936 77894020e94a338c9701619b7ef6e9871c5a9079) for context '/call-center'
+30-Sep-2024 17:07:21.883 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+30-Sep-2024 17:07:23.062 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Sep-2024 17:07:23.375 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+30-Sep-2024 17:07:23.457 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 3.1.9 (Final)
+30-Sep-2024 17:07:23.726 WARN [main] org.jboss.weld.environment.servlet.WeldServletLifecycle.initialize WELD-ENV-000028: Weld initialization skipped - no bean archive found
+30-Sep-2024 17:07:23.730 INFO [main] org.jboss.weld.environment.servlet.Listener.contextInitialized WELD-ENV-001006: org.jboss.weld.environment.servlet.EnhancedListener used to initialize Weld
+30-Sep-2024 17:07:23.836 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 2.3.9 ( 20190401-1936 77894020e94a338c9701619b7ef6e9871c5a9079) for context '/call-center'
+30-Sep-2024 17:07:24.017 INFO [main] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 10.0.0
+30-Sep-2024 17:07:24.021 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Sep-2024 17:07:24.159 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+30-Sep-2024 17:07:25.333 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext initialized in 1311 ms
+30-Sep-2024 17:07:25.599 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [265] milliseconds.
+30-Sep-2024 17:07:25.630 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+30-Sep-2024 17:07:25.905 INFO [main] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 10.0.0
+30-Sep-2024 17:07:25.909 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Sep-2024 17:07:26.027 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 397 ms
+30-Sep-2024 17:07:26.040 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml] has finished in [10,775] ms
+30-Sep-2024 17:07:26.046 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:07:26.061 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [10928] milliseconds
+30-Sep-2024 17:07:27.065 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext initialized in 1156 ms
+30-Sep-2024 17:07:27.295 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [229] milliseconds.
+30-Sep-2024 17:07:27.301 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+30-Sep-2024 17:07:27.670 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 369 ms
+30-Sep-2024 17:07:27.685 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml] has finished in [9,864] ms
+30-Sep-2024 17:07:27.690 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [9991] milliseconds
+30-Sep-2024 17:07:27.691 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: NET_Bind
+		at java.base/java.net.PlainSocketImpl.bind0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketBind(PlainSocketImpl.java:132)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:452)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:537)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:825)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:773)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+30-Sep-2024 17:07:27.691 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:07:27.691 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Sep-2024 17:07:27.705 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [call-center] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+30-Sep-2024 17:07:27.711 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:07:27.713 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:07:34.669 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:07:35.066 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Sep-2024 17:07:35.090 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [call-center] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+30-Sep-2024 17:07:35.103 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:07:35.125 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:09:54.143 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.95
+30-Sep-2024 17:09:54.146 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 18:07:47 UTC
+30-Sep-2024 17:09:54.146 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.95.0
+30-Sep-2024 17:09:54.146 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+30-Sep-2024 17:09:54.146 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Sep-2024 17:09:54.146 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Sep-2024 17:09:54.146 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\MZiad\.jdks\corretto-11.0.24
+30-Sep-2024 17:09:54.146 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.24+8-LTS
+30-Sep-2024 17:09:54.146 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+30-Sep-2024 17:09:54.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:09:54.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:09:54.156 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Sep-2024 17:09:54.156 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Sep-2024 17:09:54.156 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Sep-2024 17:09:54.156 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Sep-2024 17:09:54.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Sep-2024 17:09:54.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:09:54.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:09:54.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\MZiad\IdeaProjects\call-center\temp
+30-Sep-2024 17:09:54.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\MZiad\IdeaProjects\call-center\conf\logging.properties
+30-Sep-2024 17:09:54.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Sep-2024 17:09:54.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\lib\idea_rt.jar=58912:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\bin
+30-Sep-2024 17:09:54.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+30-Sep-2024 17:09:54.160 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+30-Sep-2024 17:09:54.160 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+30-Sep-2024 17:09:54.160 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+30-Sep-2024 17:09:54.167 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+30-Sep-2024 17:09:54.554 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:09:54.588 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [678] milliseconds
+30-Sep-2024 17:09:54.680 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Sep-2024 17:09:54.680 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.95]
+30-Sep-2024 17:09:54.695 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml]
+30-Sep-2024 17:09:58.513 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Sep-2024 17:09:58.738 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+30-Sep-2024 17:09:58.791 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 3.1.9 (Final)
+30-Sep-2024 17:09:58.971 WARN [main] org.jboss.weld.environment.servlet.WeldServletLifecycle.initialize WELD-ENV-000028: Weld initialization skipped - no bean archive found
+30-Sep-2024 17:09:58.974 INFO [main] org.jboss.weld.environment.servlet.Listener.contextInitialized WELD-ENV-001006: org.jboss.weld.environment.servlet.EnhancedListener used to initialize Weld
+30-Sep-2024 17:09:59.037 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 2.3.9 ( 20190401-1936 77894020e94a338c9701619b7ef6e9871c5a9079) for context '/call-center'
+30-Sep-2024 17:09:59.210 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+30-Sep-2024 17:10:00.953 INFO [main] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 10.0.0
+30-Sep-2024 17:10:00.956 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Sep-2024 17:10:02.020 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext initialized in 1064 ms
+30-Sep-2024 17:10:02.212 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [190] milliseconds.
+30-Sep-2024 17:10:02.234 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+30-Sep-2024 17:10:02.544 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 310 ms
+30-Sep-2024 17:10:02.554 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml] has finished in [7,860] ms
+30-Sep-2024 17:10:02.558 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:10:02.571 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [7983] milliseconds
+30-Sep-2024 17:10:07.631 SEVERE [http-nio-8080-exec-8] com.sun.faces.application.view.FaceletViewHandlingStrategy.handleRenderException Error Rendering View[/views/dashboard.xhtml]
+	java.lang.NumberFormatException: For input string: "id"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+		at java.base/java.lang.Integer.parseInt(Integer.java:652)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at javax.el.ListELResolver.coerce(ListELResolver.java:144)
+		at javax.el.ListELResolver.getValue(ListELResolver.java:64)
+		at com.sun.faces.el.DemuxCompositeELResolver._getValue(DemuxCompositeELResolver.java:180)
+		at com.sun.faces.el.DemuxCompositeELResolver.getValue(DemuxCompositeELResolver.java:208)
+		at org.apache.el.parser.AstValue.getValue(AstValue.java:160)
+		at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:151)
+		at com.sun.faces.facelets.el.TagValueExpression.getValue(TagValueExpression.java:115)
+		at javax.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:200)
+		at javax.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:187)
+		at javax.faces.component.UIOutput.getValue(UIOutput.java:179)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicInputRenderer.getValue(HtmlBasicInputRenderer.java:205)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.getCurrentValue(HtmlBasicRenderer.java:360)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.encodeEnd(HtmlBasicRenderer.java:171)
+		at javax.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:949)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.encodeRecursive(HtmlBasicRenderer.java:317)
+		at com.sun.faces.renderkit.html_basic.GridRenderer.renderRow(GridRenderer.java:186)
+		at com.sun.faces.renderkit.html_basic.GridRenderer.encodeChildren(GridRenderer.java:129)
+		at javax.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:918)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1905)
+		at javax.faces.render.Renderer.encodeChildren(Renderer.java:176)
+		at javax.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:918)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1905)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:491)
+		at com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:194)
+		at javax.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:151)
+		at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:126)
+		at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:100)
+		at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:223)
+		at javax.faces.webapp.FacesServlet.service(FacesServlet.java:671)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+30-Sep-2024 17:11:24.063 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:11:24.458 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Sep-2024 17:11:24.784 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [call-center] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+30-Sep-2024 17:11:24.794 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:11:24.809 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:11:30.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.95
+30-Sep-2024 17:11:30.642 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 18:07:47 UTC
+30-Sep-2024 17:11:30.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.95.0
+30-Sep-2024 17:11:30.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+30-Sep-2024 17:11:30.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Sep-2024 17:11:30.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Sep-2024 17:11:30.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\MZiad\.jdks\corretto-11.0.24
+30-Sep-2024 17:11:30.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.24+8-LTS
+30-Sep-2024 17:11:30.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+30-Sep-2024 17:11:30.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:11:30.643 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:11:30.657 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Sep-2024 17:11:30.657 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Sep-2024 17:11:30.657 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Sep-2024 17:11:30.657 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Sep-2024 17:11:30.657 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Sep-2024 17:11:30.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:11:30.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:11:30.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\MZiad\IdeaProjects\call-center\temp
+30-Sep-2024 17:11:30.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\MZiad\IdeaProjects\call-center\conf\logging.properties
+30-Sep-2024 17:11:30.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Sep-2024 17:11:30.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\lib\idea_rt.jar=58954:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\bin
+30-Sep-2024 17:11:30.658 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+30-Sep-2024 17:11:30.735 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+30-Sep-2024 17:11:30.735 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+30-Sep-2024 17:11:30.735 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+30-Sep-2024 17:11:30.744 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+30-Sep-2024 17:11:31.089 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:11:31.117 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [715] milliseconds
+30-Sep-2024 17:11:31.197 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Sep-2024 17:11:31.197 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.95]
+30-Sep-2024 17:11:31.206 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml]
+30-Sep-2024 17:11:32.787 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.95
+30-Sep-2024 17:11:32.791 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 18:07:47 UTC
+30-Sep-2024 17:11:32.791 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.95.0
+30-Sep-2024 17:11:32.791 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+30-Sep-2024 17:11:32.791 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Sep-2024 17:11:32.791 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Sep-2024 17:11:32.791 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\MZiad\.jdks\corretto-11.0.24
+30-Sep-2024 17:11:32.792 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.24+8-LTS
+30-Sep-2024 17:11:32.792 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+30-Sep-2024 17:11:32.792 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:11:32.792 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:11:32.803 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Sep-2024 17:11:32.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Sep-2024 17:11:32.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Sep-2024 17:11:32.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Sep-2024 17:11:32.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Sep-2024 17:11:32.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:11:32.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:11:32.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\MZiad\IdeaProjects\call-center\temp
+30-Sep-2024 17:11:32.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\MZiad\IdeaProjects\call-center\conf\logging.properties
+30-Sep-2024 17:11:32.804 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Sep-2024 17:11:32.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\lib\idea_rt.jar=58959:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\bin
+30-Sep-2024 17:11:32.805 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+30-Sep-2024 17:11:32.808 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+30-Sep-2024 17:11:32.808 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+30-Sep-2024 17:11:32.808 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+30-Sep-2024 17:11:32.816 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+30-Sep-2024 17:11:33.270 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:11:33.292 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1027)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:525)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:986)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:122)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:686)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:709)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:302)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:472)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:459)
+		at java.base/sun.nio.ch.Net.bind(Net.java:448)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:268)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:223)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1373)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1386)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:663)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1025)
+		... 13 more
+30-Sep-2024 17:11:33.296 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [749] milliseconds
+30-Sep-2024 17:11:33.408 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Sep-2024 17:11:33.408 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.95]
+30-Sep-2024 17:11:33.423 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml]
+30-Sep-2024 17:11:37.645 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Sep-2024 17:11:37.969 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+30-Sep-2024 17:11:38.023 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 3.1.9 (Final)
+30-Sep-2024 17:11:38.247 WARN [main] org.jboss.weld.environment.servlet.WeldServletLifecycle.initialize WELD-ENV-000028: Weld initialization skipped - no bean archive found
+30-Sep-2024 17:11:38.250 INFO [main] org.jboss.weld.environment.servlet.Listener.contextInitialized WELD-ENV-001006: org.jboss.weld.environment.servlet.EnhancedListener used to initialize Weld
+30-Sep-2024 17:11:38.324 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 2.3.9 ( 20190401-1936 77894020e94a338c9701619b7ef6e9871c5a9079) for context '/call-center'
+30-Sep-2024 17:11:38.549 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+30-Sep-2024 17:11:38.693 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Sep-2024 17:11:38.974 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+30-Sep-2024 17:11:39.024 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 3.1.9 (Final)
+30-Sep-2024 17:11:39.243 WARN [main] org.jboss.weld.environment.servlet.WeldServletLifecycle.initialize WELD-ENV-000028: Weld initialization skipped - no bean archive found
+30-Sep-2024 17:11:39.246 INFO [main] org.jboss.weld.environment.servlet.Listener.contextInitialized WELD-ENV-001006: org.jboss.weld.environment.servlet.EnhancedListener used to initialize Weld
+30-Sep-2024 17:11:39.325 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 2.3.9 ( 20190401-1936 77894020e94a338c9701619b7ef6e9871c5a9079) for context '/call-center'
+30-Sep-2024 17:11:39.548 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+30-Sep-2024 17:11:40.545 INFO [main] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 10.0.0
+30-Sep-2024 17:11:40.548 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Sep-2024 17:11:41.420 INFO [main] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 10.0.0
+30-Sep-2024 17:11:41.424 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Sep-2024 17:11:42.167 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext initialized in 1618 ms
+30-Sep-2024 17:11:42.432 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [263] milliseconds.
+30-Sep-2024 17:11:42.471 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+30-Sep-2024 17:11:42.925 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 454 ms
+30-Sep-2024 17:11:42.937 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml] has finished in [11,731] ms
+30-Sep-2024 17:11:42.942 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:11:42.957 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [11838] milliseconds
+30-Sep-2024 17:11:43.122 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext initialized in 1697 ms
+30-Sep-2024 17:11:43.324 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [201] milliseconds.
+30-Sep-2024 17:11:43.329 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+30-Sep-2024 17:11:43.672 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 342 ms
+30-Sep-2024 17:11:43.682 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml] has finished in [10,259] ms
+30-Sep-2024 17:11:43.690 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [10392] milliseconds
+30-Sep-2024 17:11:43.691 SEVERE [main] org.apache.catalina.core.StandardServer.await Failed to create server shutdown socket on address [localhost] and port [8005] (base port [8005] and offset [0])
+	java.net.BindException: Address already in use: NET_Bind
+		at java.base/java.net.PlainSocketImpl.bind0(Native Method)
+		at java.base/java.net.PlainSocketImpl.socketBind(PlainSocketImpl.java:132)
+		at java.base/java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:452)
+		at java.base/java.net.ServerSocket.bind(ServerSocket.java:395)
+		at java.base/java.net.ServerSocket.<init>(ServerSocket.java:257)
+		at org.apache.catalina.core.StandardServer.await(StandardServer.java:537)
+		at org.apache.catalina.startup.Catalina.await(Catalina.java:825)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:773)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+30-Sep-2024 17:11:43.691 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:11:43.691 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Sep-2024 17:11:43.704 WARNING [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [call-center] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+30-Sep-2024 17:11:43.710 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:11:43.711 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:11:51.440 SEVERE [http-nio-8080-exec-4] com.sun.faces.application.view.FaceletViewHandlingStrategy.handleRenderException Error Rendering View[/views/dashboard.xhtml]
+	java.lang.NumberFormatException: For input string: "id"
+		at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+		at java.base/java.lang.Integer.parseInt(Integer.java:652)
+		at java.base/java.lang.Integer.parseInt(Integer.java:770)
+		at javax.el.ListELResolver.coerce(ListELResolver.java:144)
+		at javax.el.ListELResolver.getValue(ListELResolver.java:64)
+		at com.sun.faces.el.DemuxCompositeELResolver._getValue(DemuxCompositeELResolver.java:180)
+		at com.sun.faces.el.DemuxCompositeELResolver.getValue(DemuxCompositeELResolver.java:208)
+		at org.apache.el.parser.AstValue.getValue(AstValue.java:160)
+		at org.apache.el.ValueExpressionImpl.getValue(ValueExpressionImpl.java:151)
+		at com.sun.faces.facelets.el.TagValueExpression.getValue(TagValueExpression.java:115)
+		at javax.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:200)
+		at javax.faces.component.ComponentStateHelper.eval(ComponentStateHelper.java:187)
+		at javax.faces.component.UIOutput.getValue(UIOutput.java:179)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicInputRenderer.getValue(HtmlBasicInputRenderer.java:205)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.getCurrentValue(HtmlBasicRenderer.java:360)
+		at com.sun.faces.renderkit.html_basic.HtmlBasicRenderer.encodeEnd(HtmlBasicRenderer.java:171)
+		at javax.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:949)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1912)
+		at org.primefaces.component.panelgrid.PanelGridRenderer.encodeDynamicBody(PanelGridRenderer.java:165)
+		at org.primefaces.component.panelgrid.PanelGridRenderer.encodeTableBody(PanelGridRenderer.java:127)
+		at org.primefaces.component.panelgrid.PanelGridRenderer.encodeTableLayout(PanelGridRenderer.java:82)
+		at org.primefaces.component.panelgrid.PanelGridRenderer.encodeEnd(PanelGridRenderer.java:53)
+		at javax.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:949)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1912)
+		at javax.faces.render.Renderer.encodeChildren(Renderer.java:176)
+		at javax.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:918)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1905)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:491)
+		at com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:194)
+		at javax.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:151)
+		at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:126)
+		at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:100)
+		at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:223)
+		at javax.faces.webapp.FacesServlet.service(FacesServlet.java:671)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+30-Sep-2024 17:11:52.965 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/call-center]
+30-Sep-2024 17:11:52.995 WARNING [Catalina-utility-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [call-center] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+30-Sep-2024 17:11:53.005 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml]
+30-Sep-2024 17:11:56.547 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Sep-2024 17:11:56.767 INFO [Catalina-utility-1] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+30-Sep-2024 17:11:56.820 INFO [Catalina-utility-1] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 3.1.9 (Final)
+30-Sep-2024 17:11:56.955 WARN [Catalina-utility-1] org.jboss.weld.environment.servlet.WeldServletLifecycle.initialize WELD-ENV-000028: Weld initialization skipped - no bean archive found
+30-Sep-2024 17:11:56.955 INFO [Catalina-utility-1] org.jboss.weld.environment.servlet.Listener.contextInitialized WELD-ENV-001006: org.jboss.weld.environment.servlet.EnhancedListener used to initialize Weld
+30-Sep-2024 17:11:57.021 INFO [Catalina-utility-1] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 2.3.9 ( 20190401-1936 77894020e94a338c9701619b7ef6e9871c5a9079) for context '/call-center'
+30-Sep-2024 17:11:57.144 INFO [Catalina-utility-1] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+30-Sep-2024 17:11:58.253 INFO [Catalina-utility-1] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 10.0.0
+30-Sep-2024 17:11:58.253 INFO [Catalina-utility-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Sep-2024 17:11:59.194 INFO [Catalina-utility-1] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext initialized in 941 ms
+30-Sep-2024 17:11:59.196 INFO [Catalina-utility-1] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+30-Sep-2024 17:11:59.507 INFO [Catalina-utility-1] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 311 ms
+30-Sep-2024 17:11:59.507 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml] has finished in [6,502] ms
+30-Sep-2024 17:12:14.357 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:12:14.732 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Sep-2024 17:12:14.747 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [call-center] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+30-Sep-2024 17:12:14.769 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:12:14.779 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:22:24.941 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.95
+30-Sep-2024 17:22:24.945 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 18:07:47 UTC
+30-Sep-2024 17:22:24.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.95.0
+30-Sep-2024 17:22:24.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+30-Sep-2024 17:22:24.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Sep-2024 17:22:24.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Sep-2024 17:22:24.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\MZiad\.jdks\corretto-11.0.24
+30-Sep-2024 17:22:24.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.24+8-LTS
+30-Sep-2024 17:22:24.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+30-Sep-2024 17:22:24.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:22:24.946 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:22:24.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Sep-2024 17:22:24.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Sep-2024 17:22:24.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Sep-2024 17:22:24.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Sep-2024 17:22:24.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Sep-2024 17:22:24.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:22:24.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:22:24.959 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\MZiad\IdeaProjects\call-center\temp
+30-Sep-2024 17:22:24.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\MZiad\IdeaProjects\call-center\conf\logging.properties
+30-Sep-2024 17:22:24.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Sep-2024 17:22:24.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\lib\idea_rt.jar=59158:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\bin
+30-Sep-2024 17:22:24.960 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+30-Sep-2024 17:22:24.963 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+30-Sep-2024 17:22:24.964 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+30-Sep-2024 17:22:24.964 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+30-Sep-2024 17:22:24.971 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+30-Sep-2024 17:22:25.313 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:22:25.336 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [638] milliseconds
+30-Sep-2024 17:22:25.421 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Sep-2024 17:22:25.421 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.95]
+30-Sep-2024 17:22:25.433 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml]
+30-Sep-2024 17:22:29.668 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Sep-2024 17:22:29.918 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+30-Sep-2024 17:22:29.960 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 3.1.9 (Final)
+30-Sep-2024 17:22:30.170 WARN [main] org.jboss.weld.environment.servlet.WeldServletLifecycle.initialize WELD-ENV-000028: Weld initialization skipped - no bean archive found
+30-Sep-2024 17:22:30.172 INFO [main] org.jboss.weld.environment.servlet.Listener.contextInitialized WELD-ENV-001006: org.jboss.weld.environment.servlet.EnhancedListener used to initialize Weld
+30-Sep-2024 17:22:30.249 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 2.3.9 ( 20190401-1936 77894020e94a338c9701619b7ef6e9871c5a9079) for context '/call-center'
+30-Sep-2024 17:22:30.439 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+30-Sep-2024 17:22:32.179 INFO [main] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 10.0.0
+30-Sep-2024 17:22:32.182 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Sep-2024 17:22:33.316 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext initialized in 1134 ms
+30-Sep-2024 17:22:33.513 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [195] milliseconds.
+30-Sep-2024 17:22:33.519 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+30-Sep-2024 17:22:33.866 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 347 ms
+30-Sep-2024 17:22:33.877 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml] has finished in [8,444] ms
+30-Sep-2024 17:22:33.883 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:22:33.905 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [8568] milliseconds
+30-Sep-2024 17:22:39.453 SEVERE [http-nio-8080-exec-4] com.sun.faces.application.view.FaceletViewHandlingStrategy.handleRenderException Error Rendering View[/views/dashboard.xhtml]
+	org.primefaces.expression.ComponentNotFoundException: Cannot find component for expression "callsTable" referenced from "j_idt5:j_idt6".
+		at org.primefaces.expression.SearchExpressionFacade.cannotFindComponent(SearchExpressionFacade.java:729)
+		at org.primefaces.expression.SearchExpressionFacade.resolveClientIds(SearchExpressionFacade.java:263)
+		at org.primefaces.util.AjaxRequestBuilder.addExpressions(AjaxRequestBuilder.java:164)
+		at org.primefaces.util.AjaxRequestBuilder.update(AjaxRequestBuilder.java:157)
+		at org.primefaces.renderkit.CoreRenderer.preConfiguredAjaxRequestBuilder(CoreRenderer.java:427)
+		at org.primefaces.renderkit.CoreRenderer.preConfiguredAjaxRequestBuilder(CoreRenderer.java:416)
+		at org.primefaces.component.poll.PollRenderer.encodeEnd(PollRenderer.java:61)
+		at javax.faces.component.UIComponentBase.encodeEnd(UIComponentBase.java:949)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1912)
+		at javax.faces.render.Renderer.encodeChildren(Renderer.java:176)
+		at javax.faces.component.UIComponentBase.encodeChildren(UIComponentBase.java:918)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1905)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at javax.faces.component.UIComponent.encodeAll(UIComponent.java:1908)
+		at com.sun.faces.application.view.FaceletViewHandlingStrategy.renderView(FaceletViewHandlingStrategy.java:491)
+		at com.sun.faces.application.view.MultiViewHandler.renderView(MultiViewHandler.java:194)
+		at javax.faces.application.ViewHandlerWrapper.renderView(ViewHandlerWrapper.java:151)
+		at com.sun.faces.lifecycle.RenderResponsePhase.execute(RenderResponsePhase.java:126)
+		at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:100)
+		at com.sun.faces.lifecycle.LifecycleImpl.render(LifecycleImpl.java:223)
+		at javax.faces.webapp.FacesServlet.service(FacesServlet.java:671)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:383)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1791)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+30-Sep-2024 17:23:15.143 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:23:15.508 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Sep-2024 17:23:15.532 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [call-center] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+30-Sep-2024 17:23:15.543 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:23:15.558 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:23:19.443 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.95
+30-Sep-2024 17:23:19.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 18:07:47 UTC
+30-Sep-2024 17:23:19.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.95.0
+30-Sep-2024 17:23:19.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+30-Sep-2024 17:23:19.446 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Sep-2024 17:23:19.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Sep-2024 17:23:19.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\MZiad\.jdks\corretto-11.0.24
+30-Sep-2024 17:23:19.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.24+8-LTS
+30-Sep-2024 17:23:19.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+30-Sep-2024 17:23:19.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:23:19.447 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:23:19.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Sep-2024 17:23:19.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Sep-2024 17:23:19.456 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Sep-2024 17:23:19.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Sep-2024 17:23:19.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Sep-2024 17:23:19.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:23:19.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:23:19.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\MZiad\IdeaProjects\call-center\temp
+30-Sep-2024 17:23:19.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\MZiad\IdeaProjects\call-center\conf\logging.properties
+30-Sep-2024 17:23:19.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Sep-2024 17:23:19.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\lib\idea_rt.jar=59176:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\bin
+30-Sep-2024 17:23:19.457 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+30-Sep-2024 17:23:19.460 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+30-Sep-2024 17:23:19.460 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+30-Sep-2024 17:23:19.460 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+30-Sep-2024 17:23:19.468 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+30-Sep-2024 17:23:19.818 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:23:19.849 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [627] milliseconds
+30-Sep-2024 17:23:19.943 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Sep-2024 17:23:19.943 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.95]
+30-Sep-2024 17:23:19.958 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml]
+30-Sep-2024 17:23:24.172 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Sep-2024 17:23:24.550 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+30-Sep-2024 17:23:24.612 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 3.1.9 (Final)
+30-Sep-2024 17:23:24.823 WARN [main] org.jboss.weld.environment.servlet.WeldServletLifecycle.initialize WELD-ENV-000028: Weld initialization skipped - no bean archive found
+30-Sep-2024 17:23:24.826 INFO [main] org.jboss.weld.environment.servlet.Listener.contextInitialized WELD-ENV-001006: org.jboss.weld.environment.servlet.EnhancedListener used to initialize Weld
+30-Sep-2024 17:23:24.900 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 2.3.9 ( 20190401-1936 77894020e94a338c9701619b7ef6e9871c5a9079) for context '/call-center'
+30-Sep-2024 17:23:25.094 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+30-Sep-2024 17:23:27.129 INFO [main] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 10.0.0
+30-Sep-2024 17:23:27.134 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Sep-2024 17:23:28.523 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext initialized in 1389 ms
+30-Sep-2024 17:23:28.742 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [217] milliseconds.
+30-Sep-2024 17:23:28.766 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+30-Sep-2024 17:23:29.206 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 440 ms
+30-Sep-2024 17:23:29.221 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml] has finished in [9,263] ms
+30-Sep-2024 17:23:29.226 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:23:29.243 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [9392] milliseconds
+30-Sep-2024 17:24:11.644 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:24:12.069 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Sep-2024 17:24:12.097 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [call-center] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+30-Sep-2024 17:24:12.108 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:24:12.124 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:24:57.469 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.95
+30-Sep-2024 17:24:57.473 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 18:07:47 UTC
+30-Sep-2024 17:24:57.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.95.0
+30-Sep-2024 17:24:57.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+30-Sep-2024 17:24:57.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Sep-2024 17:24:57.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Sep-2024 17:24:57.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\MZiad\.jdks\corretto-11.0.24
+30-Sep-2024 17:24:57.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.24+8-LTS
+30-Sep-2024 17:24:57.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+30-Sep-2024 17:24:57.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:24:57.474 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:24:57.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Sep-2024 17:24:57.487 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Sep-2024 17:24:57.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Sep-2024 17:24:57.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Sep-2024 17:24:57.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Sep-2024 17:24:57.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:24:57.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:24:57.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\MZiad\IdeaProjects\call-center\temp
+30-Sep-2024 17:24:57.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\MZiad\IdeaProjects\call-center\conf\logging.properties
+30-Sep-2024 17:24:57.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Sep-2024 17:24:57.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\lib\idea_rt.jar=59244:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\bin
+30-Sep-2024 17:24:57.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+30-Sep-2024 17:24:57.492 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+30-Sep-2024 17:24:57.492 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+30-Sep-2024 17:24:57.492 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+30-Sep-2024 17:24:57.500 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+30-Sep-2024 17:24:57.857 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:24:57.885 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [634] milliseconds
+30-Sep-2024 17:24:57.981 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Sep-2024 17:24:57.982 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.95]
+30-Sep-2024 17:24:57.995 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml]
+30-Sep-2024 17:25:01.796 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Sep-2024 17:25:02.078 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+30-Sep-2024 17:25:02.132 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 3.1.9 (Final)
+30-Sep-2024 17:25:02.344 WARN [main] org.jboss.weld.environment.servlet.WeldServletLifecycle.initialize WELD-ENV-000028: Weld initialization skipped - no bean archive found
+30-Sep-2024 17:25:02.347 INFO [main] org.jboss.weld.environment.servlet.Listener.contextInitialized WELD-ENV-001006: org.jboss.weld.environment.servlet.EnhancedListener used to initialize Weld
+30-Sep-2024 17:25:02.422 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 2.3.9 ( 20190401-1936 77894020e94a338c9701619b7ef6e9871c5a9079) for context '/call-center'
+30-Sep-2024 17:25:02.617 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+30-Sep-2024 17:25:04.370 INFO [main] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 10.0.0
+30-Sep-2024 17:25:04.372 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Sep-2024 17:25:05.440 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext initialized in 1068 ms
+30-Sep-2024 17:25:05.648 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [206] milliseconds.
+30-Sep-2024 17:25:05.682 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+30-Sep-2024 17:25:06.003 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 320 ms
+30-Sep-2024 17:25:06.016 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml] has finished in [8,022] ms
+30-Sep-2024 17:25:06.024 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:25:06.036 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [8151] milliseconds
+30-Sep-2024 17:25:56.373 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:25:56.733 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Sep-2024 17:25:56.757 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [call-center] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+30-Sep-2024 17:25:56.768 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:25:56.788 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:25:59.848 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.95
+30-Sep-2024 17:25:59.850 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 18:07:47 UTC
+30-Sep-2024 17:25:59.851 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.95.0
+30-Sep-2024 17:25:59.851 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+30-Sep-2024 17:25:59.851 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Sep-2024 17:25:59.851 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Sep-2024 17:25:59.851 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\MZiad\.jdks\corretto-11.0.24
+30-Sep-2024 17:25:59.851 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.24+8-LTS
+30-Sep-2024 17:25:59.851 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+30-Sep-2024 17:25:59.851 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:25:59.851 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:25:59.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Sep-2024 17:25:59.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Sep-2024 17:25:59.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Sep-2024 17:25:59.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Sep-2024 17:25:59.862 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Sep-2024 17:25:59.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:25:59.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:25:59.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\MZiad\IdeaProjects\call-center\temp
+30-Sep-2024 17:25:59.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\MZiad\IdeaProjects\call-center\conf\logging.properties
+30-Sep-2024 17:25:59.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Sep-2024 17:25:59.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\lib\idea_rt.jar=59341:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\bin
+30-Sep-2024 17:25:59.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+30-Sep-2024 17:25:59.866 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+30-Sep-2024 17:25:59.867 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+30-Sep-2024 17:25:59.867 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+30-Sep-2024 17:25:59.875 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+30-Sep-2024 17:26:00.206 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:26:00.236 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [659] milliseconds
+30-Sep-2024 17:26:00.324 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Sep-2024 17:26:00.324 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.95]
+30-Sep-2024 17:26:00.334 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml]
+30-Sep-2024 17:26:04.468 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Sep-2024 17:26:04.711 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+30-Sep-2024 17:26:04.764 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 3.1.9 (Final)
+30-Sep-2024 17:26:04.992 WARN [main] org.jboss.weld.environment.servlet.WeldServletLifecycle.initialize WELD-ENV-000028: Weld initialization skipped - no bean archive found
+30-Sep-2024 17:26:04.996 INFO [main] org.jboss.weld.environment.servlet.Listener.contextInitialized WELD-ENV-001006: org.jboss.weld.environment.servlet.EnhancedListener used to initialize Weld
+30-Sep-2024 17:26:05.061 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 2.3.9 ( 20190401-1936 77894020e94a338c9701619b7ef6e9871c5a9079) for context '/call-center'
+30-Sep-2024 17:26:05.246 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+30-Sep-2024 17:26:07.048 INFO [main] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 10.0.0
+30-Sep-2024 17:26:07.052 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Sep-2024 17:26:08.484 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext initialized in 1432 ms
+30-Sep-2024 17:26:08.734 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [249] milliseconds.
+30-Sep-2024 17:26:08.767 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+30-Sep-2024 17:26:09.145 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 378 ms
+30-Sep-2024 17:26:09.156 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml] has finished in [8,822] ms
+30-Sep-2024 17:26:09.161 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:26:09.179 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [8942] milliseconds
+30-Sep-2024 17:26:57.208 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:26:57.591 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Sep-2024 17:26:57.614 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [call-center] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+30-Sep-2024 17:26:57.625 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:26:57.644 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:27:04.032 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.95
+30-Sep-2024 17:27:04.036 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 18:07:47 UTC
+30-Sep-2024 17:27:04.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.95.0
+30-Sep-2024 17:27:04.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+30-Sep-2024 17:27:04.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Sep-2024 17:27:04.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Sep-2024 17:27:04.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\MZiad\.jdks\corretto-11.0.24
+30-Sep-2024 17:27:04.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.24+8-LTS
+30-Sep-2024 17:27:04.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+30-Sep-2024 17:27:04.037 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:27:04.038 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:27:04.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Sep-2024 17:27:04.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Sep-2024 17:27:04.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Sep-2024 17:27:04.049 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Sep-2024 17:27:04.050 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Sep-2024 17:27:04.050 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:27:04.050 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:27:04.050 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\MZiad\IdeaProjects\call-center\temp
+30-Sep-2024 17:27:04.050 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\MZiad\IdeaProjects\call-center\conf\logging.properties
+30-Sep-2024 17:27:04.050 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Sep-2024 17:27:04.050 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\lib\idea_rt.jar=59452:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\bin
+30-Sep-2024 17:27:04.050 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+30-Sep-2024 17:27:04.122 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+30-Sep-2024 17:27:04.123 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+30-Sep-2024 17:27:04.123 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+30-Sep-2024 17:27:04.130 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+30-Sep-2024 17:27:04.481 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:27:04.519 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [758] milliseconds
+30-Sep-2024 17:27:04.643 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Sep-2024 17:27:04.643 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.95]
+30-Sep-2024 17:27:04.661 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml]
+30-Sep-2024 17:27:08.774 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Sep-2024 17:27:09.015 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+30-Sep-2024 17:27:09.073 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 3.1.9 (Final)
+30-Sep-2024 17:27:09.284 WARN [main] org.jboss.weld.environment.servlet.WeldServletLifecycle.initialize WELD-ENV-000028: Weld initialization skipped - no bean archive found
+30-Sep-2024 17:27:09.286 INFO [main] org.jboss.weld.environment.servlet.Listener.contextInitialized WELD-ENV-001006: org.jboss.weld.environment.servlet.EnhancedListener used to initialize Weld
+30-Sep-2024 17:27:09.374 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 2.3.9 ( 20190401-1936 77894020e94a338c9701619b7ef6e9871c5a9079) for context '/call-center'
+30-Sep-2024 17:27:09.591 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+30-Sep-2024 17:27:11.296 INFO [main] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 10.0.0
+30-Sep-2024 17:27:11.299 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Sep-2024 17:27:12.562 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext initialized in 1263 ms
+30-Sep-2024 17:27:12.782 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [218] milliseconds.
+30-Sep-2024 17:27:12.828 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+30-Sep-2024 17:27:13.224 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 396 ms
+30-Sep-2024 17:27:13.239 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml] has finished in [8,578] ms
+30-Sep-2024 17:27:13.244 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:27:13.257 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [8737] milliseconds
+30-Sep-2024 17:27:31.373 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:27:31.734 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Sep-2024 17:27:31.767 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [call-center] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+30-Sep-2024 17:27:31.771 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:27:31.787 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:29:32.216 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.95
+30-Sep-2024 17:29:32.220 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 13 2024 18:07:47 UTC
+30-Sep-2024 17:29:32.221 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.95.0
+30-Sep-2024 17:29:32.221 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+30-Sep-2024 17:29:32.221 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+30-Sep-2024 17:29:32.221 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+30-Sep-2024 17:29:32.221 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Users\MZiad\.jdks\corretto-11.0.24
+30-Sep-2024 17:29:32.221 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           11.0.24+8-LTS
+30-Sep-2024 17:29:32.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+30-Sep-2024 17:29:32.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:29:32.222 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:29:32.235 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+30-Sep-2024 17:29:32.235 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+30-Sep-2024 17:29:32.235 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+30-Sep-2024 17:29:32.236 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+30-Sep-2024 17:29:32.236 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+30-Sep-2024 17:29:32.236 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Tomcat\apache-tomcat-9.0.95
+30-Sep-2024 17:29:32.236 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\Users\MZiad\IdeaProjects\call-center
+30-Sep-2024 17:29:32.236 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\Users\MZiad\IdeaProjects\call-center\temp
+30-Sep-2024 17:29:32.236 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\Users\MZiad\IdeaProjects\call-center\conf\logging.properties
+30-Sep-2024 17:29:32.236 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+30-Sep-2024 17:29:32.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\lib\idea_rt.jar=59577:C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.1\bin
+30-Sep-2024 17:29:32.237 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+30-Sep-2024 17:29:32.242 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+30-Sep-2024 17:29:32.242 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+30-Sep-2024 17:29:32.242 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+30-Sep-2024 17:29:32.253 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+30-Sep-2024 17:29:32.604 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:29:32.628 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [652] milliseconds
+30-Sep-2024 17:29:32.713 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+30-Sep-2024 17:29:32.713 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.95]
+30-Sep-2024 17:29:32.728 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml]
+30-Sep-2024 17:29:36.529 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+30-Sep-2024 17:29:36.775 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+30-Sep-2024 17:29:36.819 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 3.1.9 (Final)
+30-Sep-2024 17:29:37.020 WARN [main] org.jboss.weld.environment.servlet.WeldServletLifecycle.initialize WELD-ENV-000028: Weld initialization skipped - no bean archive found
+30-Sep-2024 17:29:37.022 INFO [main] org.jboss.weld.environment.servlet.Listener.contextInitialized WELD-ENV-001006: org.jboss.weld.environment.servlet.EnhancedListener used to initialize Weld
+30-Sep-2024 17:29:37.082 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 2.3.9 ( 20190401-1936 77894020e94a338c9701619b7ef6e9871c5a9079) for context '/call-center'
+30-Sep-2024 17:29:37.261 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+30-Sep-2024 17:29:38.935 INFO [main] org.primefaces.webapp.PostConstructApplicationEventListener.processEvent Running on PrimeFaces 10.0.0
+30-Sep-2024 17:29:38.938 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+30-Sep-2024 17:29:39.934 INFO [main] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext initialized in 996 ms
+30-Sep-2024 17:29:40.122 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [186] milliseconds.
+30-Sep-2024 17:29:40.144 SEVERE [main] org.apache.catalina.session.StandardManager.startInternal Exception loading sessions from persistent storage
+	java.io.InvalidClassException: com.eastnets.call_center.controller.DashboardController; local class incompatible: stream classdesc serialVersionUID = 2353091499046691137, local class serialVersionUID = 7503566092240144816
+		at java.base/java.io.ObjectStreamClass.initNonProxy(ObjectStreamClass.java:560)
+		at java.base/java.io.ObjectInputStream.readNonProxyDesc(ObjectInputStream.java:2020)
+		at java.base/java.io.ObjectInputStream.readClassDesc(ObjectInputStream.java:1870)
+		at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2201)
+		at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1687)
+		at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:489)
+		at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:447)
+		at org.apache.catalina.session.StandardSession.doReadObject(StandardSession.java:1268)
+		at org.apache.catalina.session.StandardSession.readObjectData(StandardSession.java:846)
+		at org.apache.catalina.session.StandardManager.doLoad(StandardManager.java:210)
+		at org.apache.catalina.session.StandardManager.load(StandardManager.java:156)
+		at org.apache.catalina.session.StandardManager.startInternal(StandardManager.java:345)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:4463)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:599)
+		at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:571)
+		at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:603)
+		at org.apache.catalina.startup.HostConfig.deployDescriptor(HostConfig.java:680)
+		at org.apache.catalina.startup.HostConfig$DeployDescriptor.run(HostConfig.java:1844)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:118)
+		at org.apache.catalina.startup.HostConfig.deployDescriptors(HostConfig.java:575)
+		at org.apache.catalina.startup.HostConfig.deployApps(HostConfig.java:466)
+		at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1584)
+		at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:312)
+		at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:109)
+		at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:385)
+		at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:332)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:776)
+		at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:721)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1203)
+		at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1193)
+		at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+		at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+		at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:140)
+		at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:749)
+		at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:211)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardService.startInternal(StandardService.java:415)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:874)
+		at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:164)
+		at org.apache.catalina.startup.Catalina.start(Catalina.java:735)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:345)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:473)
+30-Sep-2024 17:29:40.153 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+30-Sep-2024 17:29:40.488 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 335 ms
+30-Sep-2024 17:29:40.501 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [C:\Users\MZiad\IdeaProjects\call-center\conf\Catalina\localhost\call-center.xml] has finished in [7,774] ms
+30-Sep-2024 17:29:40.506 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:29:40.520 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [7891] milliseconds
+30-Sep-2024 17:30:39.516 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:30:39.927 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+30-Sep-2024 17:30:39.958 WARNING [Thread-1] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [call-center] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+30-Sep-2024 17:30:39.973 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+30-Sep-2024 17:30:39.989 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

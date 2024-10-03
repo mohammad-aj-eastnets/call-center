@@ -2,9 +2,11 @@ package com.eastnets.call_center.controller;
 
 import com.eastnets.call_center.model.Supervisor;
 import com.eastnets.call_center.serviceInterfaces.ISupervisorService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.context.annotation.RequestScope;
 
+import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
@@ -15,14 +17,28 @@ import java.io.IOException;
 @RequestScope
 @Controller
 public class SupervisorController {
-    private final ISupervisorService supervisorService;
-    private Supervisor supervisor = new Supervisor();
+    private ISupervisorService supervisorService;
+    private Supervisor supervisor;
 
+    @Autowired
     public SupervisorController(ISupervisorService supervisorService) {
         this.supervisorService = supervisorService;
     }
 
+    // Empty constructor
+    public SupervisorController() {
+        // Default constructor
+    }
+
+    @PostConstruct
+    public void init() {
+        supervisor = getSupervisor();
+    }
+
     public Supervisor getSupervisor() {
+        if (supervisor == null) {
+            supervisor = new Supervisor();
+        }
         return supervisor;
     }
 
@@ -47,6 +63,4 @@ public class SupervisorController {
             return null;
         }
     }
-
-
 }

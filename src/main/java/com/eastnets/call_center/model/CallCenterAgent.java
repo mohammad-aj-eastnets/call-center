@@ -9,6 +9,7 @@ public class CallCenterAgent {
     private String name;
     private AgentStatus status;
     private Timestamp statusTime;
+    private Long totalNumberOfCalls;
 
     public Timestamp getStatusTime() {
         return statusTime;
@@ -40,5 +41,13 @@ public class CallCenterAgent {
 
     public void setStatus(AgentStatus status) {
         this.status = status;
+    }
+
+    public void setTotalNumberOfCalls(long totalNumberOfCalls) {
+        this.totalNumberOfCalls = totalNumberOfCalls;
+    }
+
+    public long getTotalNumberOfCalls() {
+        return totalNumberOfCalls;
     }
 }
