@@ -16,6 +16,9 @@
 
         <p:poll interval="1" update="@form" listener="#{dashboardController.loadDashboardData}" />
 
+        <h2>Agent Status Distribution</h2>
+        <p:chart type="pie" model="#{dashboardController.pieModel}" style="width:400px;height:300px;" />
+
         <h2>Call Center Agents</h2>
         <p:dataTable id="agentsTable" value="#{dashboardController.agents}" var="agent">
             <p:column headerText="ID">
@@ -34,10 +37,10 @@
                 <h:outputText value="#{agent.totalNumberOfCalls}" />
             </p:column>
             <p:column>
-                <p:commandButton value="Toggle Status" action="#{dashboardController.toggleAgentStatus(agent.id)}" update=":mainForm:agentsTable"
-                                 disabled="#{agent.status == 'ON_CALL'}" oncomplete="resetFocus()">
-                    <p:ajax update=":mainForm:agentsTable" oncomplete="resetFocus()" />
-                </p:commandButton>
+                <p:inputSwitch value="#{agent.ready}" onLabel="Ready" offLabel="Not Ready"
+                               disabled="#{agent.status == 'ON_CALL'}">
+                    <p:ajax listener="#{dashboardController.toggleAgentStatus(agent.id)}" update=":mainForm:agentsTable" oncomplete="resetFocus()" />
+                </p:inputSwitch>
             </p:column>
         </p:dataTable>
 

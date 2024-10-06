@@ -40,6 +40,14 @@ public class CallCenterAgent {
         resetStatusDuration();
     }
 
+    public boolean isReady() {
+        return this.status == AgentStatus.READY;
+    }
+
+    public void setReady(boolean ready) {
+        this.status = ready ? AgentStatus.READY : AgentStatus.NOT_READY;
+    }
+
     public long getStatusDurationSeconds() {
         return statusDurationSeconds;
     }
