@@ -3,14 +3,15 @@ package com.eastnets.call_center.service;
 import com.eastnets.call_center.model.GeneratedReport;
 import com.eastnets.call_center.model.Call;
 import com.eastnets.call_center.model.CallCenterAgent;
-import com.eastnets.call_center.serviceInterfaces.IGeneratedReportService;
-import com.eastnets.call_center.repositoryInterfaces.ICallRepository;
 import com.eastnets.call_center.repositoryInterfaces.IGeneratedReportRepository;
+import com.eastnets.call_center.repositoryInterfaces.ICallRepository;
 import com.eastnets.call_center.serviceInterfaces.ICallCenterAgentService;
+import com.eastnets.call_center.serviceInterfaces.IGeneratedReportService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.OptionalLong;
 import java.util.stream.Collectors;
 
 @Service
@@ -27,6 +28,7 @@ public class GeneratedReportService implements IGeneratedReportService {
         this.agentService = agentService;
     }
 
+    @Override
     public void generateReports() {
         List<CallCenterAgent> agents = agentService.getAllAgents();
         List<Call> allCalls = callRepository.findAll();
@@ -37,15 +39,20 @@ public class GeneratedReportService implements IGeneratedReportService {
                     .filter(call -> call.getAgentID() == agent.getId())
                     .collect(Collectors.toList());
 
-            Integer totalNumberOfCalls = !agentCalls.isEmpty() ? agentCalls.size() : null;
-            Long totalTalkTime = agentCalls.stream().mapToLong(Call::getDuration).sum() > 0 ? agentCalls.stream().mapToLong(Call::getDuration).sum() : null;
-            Long longestTalkTime = agentCalls.stream().mapToLong(Call::getDuration).max().orElse(0) > 0 ? agentCalls.stream().mapToLong(Call::getDuration).max().orElse(0) : null;
-            Long shortestTalkTime = agentCalls.stream().mapToLong(Call::getDuration).min().orElse(0) > 0 ? agentCalls.stream().mapToLong(Call::getDuration).min().orElse(0) : null;
-            Long totalTimeNotReady = agent.getTotalTimeNotReady() > 0 ? agent.getTotalTimeNotReady() : null; // Assuming this is tracked in the agent entity
-            Double avgRecOnTotal = totalNumberOfCalls != null && totalCallsInSystem > 0 ? (double) totalNumberOfCalls / totalCallsInSystem : null;
+            long totalNumberOfCalls = agent.getTotalNumberOfCalls();
+            long totalTalkTime = agentCalls.stream().mapToLong(Call::getDuration).sum();
+            long longestTalkTime = agentCalls.stream().mapToLong(Call::getDuration).max().orElse(0);
+            OptionalLong shortestTalkTimeOpt = agentCalls.stream().mapToLong(Call::getDuration).min();
+            long shortestTalkTime = shortestTalkTimeOpt.isPresent() ? shortestTalkTimeOpt.getAsLong() : 0;
+            long totalTimeNotReady = 0; // Assuming this is tracked in the agent entity
+            double avgRecOnTotal = totalCallsInSystem > 0 ? (double) totalNumberOfCalls / totalCallsInSystem : 0;
 
-            GeneratedReport report = new GeneratedReport();
-            report.setAgentID(agent.getId());
+            GeneratedReport report = generatedReportRepository.findByAgentID(agent.getId());
+            if (report == null) {
+                report = new GeneratedReport();
+                report.setAgentID(agent.getId());
+            }
+
             report.setTotalNumberOfCalls(totalNumberOfCalls);
             report.setTotalTalkTime(totalTalkTime);
             report.setLongestTalkTime(longestTalkTime);
@@ -53,10 +60,15 @@ public class GeneratedReportService implements IGeneratedReportService {
             report.setTotalTimeNotReady(totalTimeNotReady);
             report.setAvgRecOnTotal(avgRecOnTotal);
 
-            generatedReportRepository.save(report);
+            if (report.getReportID() == 0) {
+                generatedReportRepository.save(report);
+            } else {
+                generatedReportRepository.update(report);
+            }
         }
     }
 
+    @Override
     public List<GeneratedReport> getAllReports() {
         return generatedReportRepository.findAll();
     }

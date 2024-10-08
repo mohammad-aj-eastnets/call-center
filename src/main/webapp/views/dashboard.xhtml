@@ -62,6 +62,34 @@
                 <h:outputText value="#{call.formattedDuration}" />
             </p:column>
         </p:dataTable>
+
+        <h2>Generated Reports</h2>
+        <p:dataTable id="reportsTable" value="#{dashboardController.reports}" var="report">
+            <p:column headerText="Report ID">
+                <h:outputText value="#{report.reportID}" />
+            </p:column>
+            <p:column headerText="Agent ID">
+                <h:outputText value="#{report.agentID}" />
+            </p:column>
+            <p:column headerText="Total Number of Calls">
+                <h:outputText value="#{report.totalNumberOfCalls}" />
+            </p:column>
+            <p:column headerText="Total Talk Time">
+                <h:outputText value="#{report.totalTalkTime}" />
+            </p:column>
+            <p:column headerText="Longest Talk Time">
+                <h:outputText value="#{report.longestTalkTime}" />
+            </p:column>
+            <p:column headerText="Shortest Talk Time">
+                <h:outputText value="#{report.shortestTalkTime}" />
+            </p:column>
+            <p:column headerText="Total Time Not Ready">
+                <h:outputText value="#{report.totalTimeNotReady}" />
+            </p:column>
+            <p:column headerText="Avg Rec On Total">
+                <h:outputText value="#{report.avgRecOnTotal}" />
+            </p:column>
+        </p:dataTable>
     </h:form>
 </h:body>
 </html>
