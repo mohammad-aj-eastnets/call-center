@@ -28,21 +28,37 @@ public class CallRepository implements ICallRepository {
             call.setAgentID(rs.getLong("agentID"));
             call.setStartTime(rs.getTimestamp("startTime").toLocalDateTime());
             call.setEndTime(rs.getTimestamp("endTime") != null ? rs.getTimestamp("endTime").toLocalDateTime() : null);
-            call.setDuration(rs.getInt("duration"));
+            call.setClosure(rs.getString("closure"));
+            call.setDuration(rs.getLong("duration")); // Map duration field
             return call;
         }
     }
 
     @Override
     public void save(Call call) {
-        String sql = "INSERT INTO calls (agentID, startTime, endTime, duration) VALUES (:agentID, :startTime, :endTime, :duration)";
+        String sql = "INSERT INTO calls (agentID, startTime, endTime, closure, duration) VALUES (:agentID, :startTime, :endTime, :closure, :duration)";
         MapSqlParameterSource params = new MapSqlParameterSource();
         params.addValue("agentID", call.getAgentID());
         params.addValue("startTime", call.getStartTime());
         params.addValue("endTime", call.getEndTime());
-        params.addValue("duration", call.getDuration());
+        params.addValue("closure", call.getClosure());
+        params.addValue("duration", call.getDuration()); // Add duration parameter
         namedParameterJdbcTemplate.update(sql, params);
     }
+
+    @Override
+    public void update(Call call) {
+        String sql = "UPDATE calls SET agentID = :agentID, startTime = :startTime, endTime = :endTime, closure = :closure, duration = :duration WHERE callID = :callID";
+        MapSqlParameterSource params = new MapSqlParameterSource();
+        params.addValue("agentID", call.getAgentID());
+        params.addValue("startTime", call.getStartTime());
+        params.addValue("endTime", call.getEndTime());
+        params.addValue("closure", call.getClosure());
+        params.addValue("duration", call.getDuration()); // Add duration parameter
+        params.addValue("callID", call.getCallID());
+        namedParameterJdbcTemplate.update(sql, params);
+    }
+
 
     @Override
     public Call findById(int callID) {
@@ -56,17 +72,5 @@ public class CallRepository implements ICallRepository {
     public List<Call> findAll() {
         String sql = "SELECT * FROM calls";
         return namedParameterJdbcTemplate.query(sql, new CallMapper());
-    }
-
-    @Override
-    public void update(Call call) {
-        String sql = "UPDATE calls SET agentID = :agentID, startTime = :startTime, endTime = :endTime, duration = :duration WHERE callID = :callID";
-        MapSqlParameterSource params = new MapSqlParameterSource();
-        params.addValue("agentID", call.getAgentID());
-        params.addValue("startTime", call.getStartTime());
-        params.addValue("endTime", call.getEndTime());
-        params.addValue("duration", call.getDuration());
-        params.addValue("callID", call.getCallID());
-        namedParameterJdbcTemplate.update(sql, params);
     }
 }

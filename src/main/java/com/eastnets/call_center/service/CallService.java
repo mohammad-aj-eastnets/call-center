@@ -1,5 +1,6 @@
 package com.eastnets.call_center.service;
 
+import com.eastnets.call_center.config.CallConfig;
 import com.eastnets.call_center.enums.AgentStatus;
 import com.eastnets.call_center.model.Call;
 import com.eastnets.call_center.model.CallCenterAgent;
@@ -13,17 +14,20 @@ import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
+import java.time.Duration;
 
 @Service
 public class CallService implements ICallService {
 
     private final ICallRepository callRepository;
     private final ICallCenterAgentService agentService;
+    private final CallConfig callConfig;
 
     @Autowired
-    public CallService(ICallRepository callRepository, ICallCenterAgentService agentService) {
+    public CallService(ICallRepository callRepository, ICallCenterAgentService agentService, CallConfig callConfig) {
         this.callRepository = callRepository;
         this.agentService = agentService;
+        this.callConfig = callConfig;
     }
 
     @Override
@@ -37,6 +41,8 @@ public class CallService implements ICallService {
         Call call = callRepository.findById(callID);
         if (call != null && call.getEndTime() == null) { // Check if the call has already ended
             call.setEndTime(LocalDateTime.now());
+            call.setClosure("closed by system"); // Set closure field
+            call.setDuration(Duration.between(call.getStartTime(), call.getEndTime()).getSeconds()); // Calculate and set duration
             callRepository.update(call);
             agentService.changeAgentStatus(call.getAgentID(), AgentStatus.READY); // Change agent status to READY
             agentService.incrementTotalCalls(call.getAgentID()); // Increment total calls for the agent
@@ -55,11 +61,13 @@ public class CallService implements ICallService {
 
     public void closeLongestCalls() {
         List<Call> longCalls = getAllCalls().stream()
-                .filter(call -> call.getDuration() > 10)
-                .sorted((c1, c2) -> Integer.compare(c2.getDuration(), c1.getDuration()))
+                .filter(call -> Duration.between(call.getStartTime(), LocalDateTime.now()).getSeconds() > callConfig.getCallDurationThreshold())
+                .sorted((c1, c2) -> Long.compare(
+                        Duration.between(c2.getStartTime(), LocalDateTime.now()).getSeconds(),
+                        Duration.between(c1.getStartTime(), LocalDateTime.now()).getSeconds()))
                 .collect(Collectors.toList());
 
-        int callsToClose = (int) (longCalls.size() * 0.75);
+        int callsToClose = (int) (longCalls.size() * callConfig.getCallClosePercentage());
         for (int i = 0; i < callsToClose; i++) {
             Call call = longCalls.get(i);
             endCall(call.getCallID());

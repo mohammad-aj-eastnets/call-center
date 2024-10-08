@@ -1,14 +1,14 @@
 package com.eastnets.call_center.model;
 
 import java.time.LocalDateTime;
-import java.time.Duration;
 
 public class Call {
     private int callID;
     private long agentID;
     private LocalDateTime startTime;
     private LocalDateTime endTime;
-    private int duration;
+    private String closure;
+    private long duration;
 
     // Getters and setters
     public int getCallID() {
@@ -43,22 +43,26 @@ public class Call {
         this.endTime = endTime;
     }
 
-    public int getDuration() {
-        if (endTime != null) {
-            return (int) Duration.between(startTime, endTime).getSeconds();
-        } else {
-            return (int) Duration.between(startTime, LocalDateTime.now()).getSeconds();
-        }
+    public long getDuration() {
+        return duration;
     }
 
-    public void setDuration(int duration) {
+    public void setDuration(long duration) {
         this.duration = duration;
     }
 
     public String getFormattedDuration() {
-        int seconds = getDuration();
+        int seconds = (int) duration;
         int minutes = seconds / 60;
         seconds = seconds % 60;
         return String.format("%d min, %d sec", minutes, seconds);
+    }
+
+    public String getClosure() {
+        return closure;
+    }
+
+    public void setClosure(String closure) {
+        this.closure = closure;
     }
 }

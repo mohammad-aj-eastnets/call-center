@@ -49,8 +49,8 @@ public class ApplicationConfig {
     }
 
     @Bean
-    public ICallService callService(ICallRepository callRepository, ICallCenterAgentService agentService) {
-        return new CallService(callRepository,agentService);
+    public ICallService callService(ICallRepository callRepository, ICallCenterAgentService agentService, CallConfig callConfig) {
+        return new CallService(callRepository,agentService,callConfig);
     }
 
     @Bean
@@ -59,8 +59,8 @@ public class ApplicationConfig {
     }
 
     @Bean
-    public IGeneratedReportService generatedReportService(IGeneratedReportRepository generatedReportRepository) {
-        return new GeneratedReportService(generatedReportRepository);
+    public IGeneratedReportService generatedReportService(IGeneratedReportRepository generatedReportRepository, ICallRepository callRepository, ICallCenterAgentService agentService) {
+        return new GeneratedReportService(generatedReportRepository,callRepository,agentService);
     }
 
 

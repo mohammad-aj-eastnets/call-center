@@ -10,6 +10,7 @@ public class CallCenterAgent {
     private long statusDurationMinutes;
     private long statusDurationHours;
     private Long totalNumberOfCalls;
+    private Long totalTimeNotReady;
 
     public CallCenterAgent() {
         resetStatusDuration();
@@ -79,4 +80,9 @@ public class CallCenterAgent {
         this.statusDurationMinutes = (durationInSeconds / 60) % 60;
         this.statusDurationHours = durationInSeconds / 3600;
     }
+
+    public Long getTotalTimeNotReady() {
+        return totalTimeNotReady;
+    }
+
 }

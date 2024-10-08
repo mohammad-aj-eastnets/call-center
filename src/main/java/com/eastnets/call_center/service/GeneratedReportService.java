@@ -1,52 +1,63 @@
 package com.eastnets.call_center.service;
 
 import com.eastnets.call_center.model.GeneratedReport;
-import com.eastnets.call_center.repositoryInterfaces.IGeneratedReportRepository;
+import com.eastnets.call_center.model.Call;
+import com.eastnets.call_center.model.CallCenterAgent;
 import com.eastnets.call_center.serviceInterfaces.IGeneratedReportService;
+import com.eastnets.call_center.repositoryInterfaces.ICallRepository;
+import com.eastnets.call_center.repositoryInterfaces.IGeneratedReportRepository;
+import com.eastnets.call_center.serviceInterfaces.ICallCenterAgentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDate;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class GeneratedReportService implements IGeneratedReportService {
 
-    private final IGeneratedReportRepository reportRepository;
+    private final IGeneratedReportRepository generatedReportRepository;
+    private final ICallRepository callRepository;
+    private final ICallCenterAgentService agentService;
 
     @Autowired
-    public GeneratedReportService(IGeneratedReportRepository reportRepository) {
-        this.reportRepository = reportRepository;
+    public GeneratedReportService(IGeneratedReportRepository generatedReportRepository, ICallRepository callRepository, ICallCenterAgentService agentService) {
+        this.generatedReportRepository = generatedReportRepository;
+        this.callRepository = callRepository;
+        this.agentService = agentService;
     }
 
-    @Override
-    public GeneratedReport getReportById(Long id) {
-        return reportRepository.findById(id);
+    public void generateReports() {
+        List<CallCenterAgent> agents = agentService.getAllAgents();
+        List<Call> allCalls = callRepository.findAll();
+        int totalCallsInSystem = allCalls.size();
+
+        for (CallCenterAgent agent : agents) {
+            List<Call> agentCalls = allCalls.stream()
+                    .filter(call -> call.getAgentID() == agent.getId())
+                    .collect(Collectors.toList());
+
+            Integer totalNumberOfCalls = !agentCalls.isEmpty() ? agentCalls.size() : null;
+            Long totalTalkTime = agentCalls.stream().mapToLong(Call::getDuration).sum() > 0 ? agentCalls.stream().mapToLong(Call::getDuration).sum() : null;
+            Long longestTalkTime = agentCalls.stream().mapToLong(Call::getDuration).max().orElse(0) > 0 ? agentCalls.stream().mapToLong(Call::getDuration).max().orElse(0) : null;
+            Long shortestTalkTime = agentCalls.stream().mapToLong(Call::getDuration).min().orElse(0) > 0 ? agentCalls.stream().mapToLong(Call::getDuration).min().orElse(0) : null;
+            Long totalTimeNotReady = agent.getTotalTimeNotReady() > 0 ? agent.getTotalTimeNotReady() : null; // Assuming this is tracked in the agent entity
+            Double avgRecOnTotal = totalNumberOfCalls != null && totalCallsInSystem > 0 ? (double) totalNumberOfCalls / totalCallsInSystem : null;
+
+            GeneratedReport report = new GeneratedReport();
+            report.setAgentID(agent.getId());
+            report.setTotalNumberOfCalls(totalNumberOfCalls);
+            report.setTotalTalkTime(totalTalkTime);
+            report.setLongestTalkTime(longestTalkTime);
+            report.setShortestTalkTime(shortestTalkTime);
+            report.setTotalTimeNotReady(totalTimeNotReady);
+            report.setAvgRecOnTotal(avgRecOnTotal);
+
+            generatedReportRepository.save(report);
+        }
     }
 
-    @Override
     public List<GeneratedReport> getAllReports() {
-        return reportRepository.findAll();
-    }
-
-    @Override
-    public void saveReport(GeneratedReport report) {
-        reportRepository.save(report);
-    }
-
-    @Override
-    public void deleteReport(Long id) {
-        reportRepository.delete(id);
-    }
-
-    @Override
-    public GeneratedReport generateDailyReport(Long agentId) {
-        // Logic to generate daily report for the agent
-        GeneratedReport report = new GeneratedReport();
-        report.setAgentId(agentId);
-        report.setReportDate(LocalDate.now());
-        // Set other fields based on business logic
-        reportRepository.save(report);
-        return report;
+        return generatedReportRepository.findAll();
     }
 }

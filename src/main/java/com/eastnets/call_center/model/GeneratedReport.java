@@ -1,88 +1,77 @@
 package com.eastnets.call_center.model;
 
-import java.time.LocalDate;
-
 public class GeneratedReport {
-    private Long id;
-    private Long agentId;
-    private LocalDate reportDate;
-    private int totalCalls;
-    private long totalTalkTime;
-    private long longestTalkTime;
-    private long shortestTalkTime;
-    private long totalNotReadyTime;
-    private double averageCalls;
+    private int reportID;
+    private long agentID;
+    private Integer totalNumberOfCalls; // Use Integer instead of int
+    private Long totalTalkTime; // Use Long instead of long
+    private Long longestTalkTime; // Use Long instead of long
+    private Long shortestTalkTime; // Use Long instead of long
+    private Long totalTimeNotReady; // Use Long instead of long
+    private Double avgRecOnTotal; // Use Double instead of double
 
-    public Long getId() {
-        return id;
+    // Getters and setters
+    public int getReportID() {
+        return reportID;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setReportID(int reportID) {
+        this.reportID = reportID;
     }
 
-    public Long getAgentId() {
-        return agentId;
+    public long getAgentID() {
+        return agentID;
     }
 
-    public void setAgentId(Long agentId) {
-        this.agentId = agentId;
+    public void setAgentID(long agentID) {
+        this.agentID = agentID;
     }
 
-    public LocalDate getReportDate() {
-        return reportDate;
+    public Integer getTotalNumberOfCalls() {
+        return totalNumberOfCalls;
     }
 
-    public void setReportDate(LocalDate reportDate) {
-        this.reportDate = reportDate;
+    public void setTotalNumberOfCalls(Integer totalNumberOfCalls) {
+        this.totalNumberOfCalls = totalNumberOfCalls;
     }
 
-    public int getTotalCalls() {
-        return totalCalls;
-    }
-
-    public void setTotalCalls(int totalCalls) {
-        this.totalCalls = totalCalls;
-    }
-
-    public long getTotalTalkTime() {
+    public Long getTotalTalkTime() {
         return totalTalkTime;
     }
 
-    public void setTotalTalkTime(long totalTalkTime) {
+    public void setTotalTalkTime(Long totalTalkTime) {
         this.totalTalkTime = totalTalkTime;
     }
 
-    public long getLongestTalkTime() {
+    public Long getLongestTalkTime() {
         return longestTalkTime;
     }
 
-    public void setLongestTalkTime(long longestTalkTime) {
+    public void setLongestTalkTime(Long longestTalkTime) {
         this.longestTalkTime = longestTalkTime;
     }
 
-    public long getShortestTalkTime() {
+    public Long getShortestTalkTime() {
         return shortestTalkTime;
     }
 
-    public void setShortestTalkTime(long shortestTalkTime) {
+    public void setShortestTalkTime(Long shortestTalkTime) {
         this.shortestTalkTime = shortestTalkTime;
     }
 
-    public long getTotalNotReadyTime() {
-        return totalNotReadyTime;
+    public Long getTotalTimeNotReady() {
+        return totalTimeNotReady;
     }
 
-    public void setTotalNotReadyTime(long totalNotReadyTime) {
-        this.totalNotReadyTime = totalNotReadyTime;
+    public void setTotalTimeNotReady(Long totalTimeNotReady) {
+        this.totalTimeNotReady = totalTimeNotReady;
     }
 
-    public double getAverageCalls() {
-        return averageCalls;
+    public Double getAvgRecOnTotal() {
+        return avgRecOnTotal;
     }
 
-    public void setAverageCalls(double averageCalls) {
-        this.averageCalls = averageCalls;
+    public void setAvgRecOnTotal(Double avgRecOnTotal) {
+        this.avgRecOnTotal = avgRecOnTotal;
     }
-
 }
