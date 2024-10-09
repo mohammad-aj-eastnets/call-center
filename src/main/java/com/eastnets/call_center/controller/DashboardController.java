@@ -137,10 +137,10 @@ public class DashboardController implements Serializable {
             throw new IllegalStateException("callService is not properly initialized");
         }
         callService.closeLongestCalls();
-        loadDashboardData(); // Refresh data
+        loadDashboardData(); 
     }
 
-    @Scheduled(fixedRate = 70000) // Run every hour
+    @Scheduled(fixedRate = 70000)
     public void generateReports() {
         if (reportService == null) {
             throw new IllegalStateException("reportService is not properly initialized");
