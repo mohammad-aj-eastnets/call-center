@@ -16,6 +16,7 @@ import org.springframework.web.context.annotation.SessionScope;
 import javax.annotation.PostConstruct;
 import javax.faces.context.FacesContext;
 import javax.inject.Named;
+import java.io.IOException;
 import java.io.Serializable;
 import java.util.List;
 
@@ -23,6 +24,8 @@ import java.util.List;
 @SessionScope
 @Controller
 public class DashboardController implements Serializable {
+
+    private static final long serialVersionUID = 1L;
 
     private ICallCenterAgentService agentService;
     private ICallService callService;
@@ -137,7 +140,7 @@ public class DashboardController implements Serializable {
             throw new IllegalStateException("callService is not properly initialized");
         }
         callService.closeLongestCalls();
-        loadDashboardData(); 
+        loadDashboardData();
     }
 
     @Scheduled(fixedRate = 70000)
@@ -166,5 +169,14 @@ public class DashboardController implements Serializable {
         pieModel.setLegendPosition("w");
         pieModel.setShowDataLabels(true);
         pieModel.setSeriesColors("FF9999,99CCFF,FFFF99"); // Light Red, Light Blue, Light Yellow
+    }
+
+    public void generatePdf() {
+        try {
+            // Redirect to the ReportServlet
+            FacesContext.getCurrentInstance().getExternalContext().redirect("/call-center/report");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

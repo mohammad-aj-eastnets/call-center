@@ -15,6 +15,12 @@
         <load-on-startup>1</load-on-startup>
     </servlet>
 
+    <servlet>
+        <servlet-name>reportServlet</servlet-name>
+        <servlet-class>com.eastnets.call_center.servlet.ReportServlet</servlet-class>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>FacesServlet</servlet-name>
         <url-pattern>/faces/*</url-pattern>
@@ -25,8 +31,12 @@
         <url-pattern>*.xhtml</url-pattern>
     </servlet-mapping>
 
+    <servlet-mapping>
+        <servlet-name>reportServlet</servlet-name>
+        <url-pattern>/report</url-pattern>
+    </servlet-mapping>
+
     <welcome-file-list>
         <welcome-file>faces/views/login.xhtml</welcome-file>
     </welcome-file-list>
-
 </web-app>

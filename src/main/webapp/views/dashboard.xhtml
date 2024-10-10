@@ -90,6 +90,8 @@
                 <h:outputText value="#{report.avgRecOnTotal}" />
             </p:column>
         </p:dataTable>
+
+        <h:commandButton value="Generate PDF Report" action="#{dashboardController.generatePdf}" ajax="false" />
     </h:form>
 </h:body>
 </html>

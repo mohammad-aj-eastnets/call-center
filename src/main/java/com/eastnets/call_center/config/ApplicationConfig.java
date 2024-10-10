@@ -9,6 +9,7 @@ import com.eastnets.call_center.service.*;
 import com.eastnets.call_center.serviceInterfaces.ICallCenterAgentService;
 import com.eastnets.call_center.serviceInterfaces.ICallService;
 import com.eastnets.call_center.serviceInterfaces.IGeneratedReportService;
+import com.eastnets.call_center.serviceInterfaces.IJasperReportService;
 import com.eastnets.call_center.serviceInterfaces.ISupervisorService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -50,7 +51,7 @@ public class ApplicationConfig {
 
     @Bean
     public ICallService callService(ICallRepository callRepository, ICallCenterAgentService agentService, CallConfig callConfig) {
-        return new CallService(callRepository,agentService,callConfig);
+        return new CallService(callRepository, agentService, callConfig);
     }
 
     @Bean
@@ -60,8 +61,11 @@ public class ApplicationConfig {
 
     @Bean
     public IGeneratedReportService generatedReportService(IGeneratedReportRepository generatedReportRepository, ICallRepository callRepository, ICallCenterAgentService agentService) {
-        return new GeneratedReportService(generatedReportRepository,callRepository,agentService);
+        return new GeneratedReportService(generatedReportRepository, callRepository, agentService);
     }
 
-
+    @Bean
+    public IJasperReportService jasperReportService() {
+        return new JasperReportService();
+    }
 }
