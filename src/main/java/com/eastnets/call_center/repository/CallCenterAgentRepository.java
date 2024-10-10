@@ -31,6 +31,7 @@ public class CallCenterAgentRepository implements ICallCenterAgentRepository {
             long durationInSeconds = rs.getLong("statusDurationSeconds");
             agent.updateStatusDuration(durationInSeconds);
             agent.setTotalNumberOfCalls(rs.getInt("totalNumberOfCalls"));
+            agent.accumulateNotReadyTime(rs.getLong("totalNotReadyTime"));
             return agent;
         }
     }
@@ -52,12 +53,13 @@ public class CallCenterAgentRepository implements ICallCenterAgentRepository {
 
     @Override
     public void save(CallCenterAgent agent) {
-        String sql = "INSERT INTO Agents (agentID, status, agent, time, totalNumberOfCalls) VALUES (:agentID, :status, :agent, CURRENT_TIMESTAMP, :totalNumberOfCalls)";
+        String sql = "INSERT INTO Agents (agentID, status, agent, time, totalNumberOfCalls, totalNotReadyTime) VALUES (:agentID, :status, :agent, CURRENT_TIMESTAMP, :totalNumberOfCalls, :totalNotReadyTime)";
         MapSqlParameterSource params = new MapSqlParameterSource();
         params.addValue("agentID", agent.getId());
         params.addValue("status", agent.getStatus().name());
         params.addValue("agent", agent.getName());
         params.addValue("totalNumberOfCalls", agent.getTotalNumberOfCalls());
+        params.addValue("totalNotReadyTime", agent.getTotalTimeNotReady());
         namedParameterJdbcTemplate.update(sql, params);
     }
 
@@ -93,6 +95,14 @@ public class CallCenterAgentRepository implements ICallCenterAgentRepository {
     public void incrementTotalCalls(Long id) {
         String sql = "UPDATE Agents SET totalNumberOfCalls = totalNumberOfCalls + 1 WHERE agentID = :id";
         MapSqlParameterSource params = new MapSqlParameterSource();
+        params.addValue("id", id);
+        namedParameterJdbcTemplate.update(sql, params);
+    }
+
+    public void updateTotalTimeNotReady(Long id, Long totalNotReadyTime) {
+        String sql = "UPDATE Agents SET totalNotReadyTime = :totalNotReadyTime WHERE agentID = :id";
+        MapSqlParameterSource params = new MapSqlParameterSource();
+        params.addValue("totalNotReadyTime", totalNotReadyTime);
         params.addValue("id", id);
         namedParameterJdbcTemplate.update(sql, params);
     }

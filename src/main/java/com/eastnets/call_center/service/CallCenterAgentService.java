@@ -48,6 +48,11 @@ public class CallCenterAgentService implements ICallCenterAgentService {
     public boolean changeAgentStatus(Long id, AgentStatus newStatus) {
         CallCenterAgent agent = getAgentById(id);
         if (agent != null) {
+            if (agent.getStatus() == AgentStatus.NOT_READY) {
+                long durationInSeconds = getAgentStatusDuration(id, AgentStatus.NOT_READY.name());
+                agent.accumulateNotReadyTime(durationInSeconds);
+                callCenterAgentRepository.updateTotalTimeNotReady(id, agent.getTotalTimeNotReady());
+            }
             agent.setStatus(newStatus);
             return callCenterAgentRepository.updateStatus(id, newStatus);
         }

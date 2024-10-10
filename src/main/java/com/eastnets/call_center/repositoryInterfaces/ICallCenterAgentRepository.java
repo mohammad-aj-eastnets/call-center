@@ -14,4 +14,6 @@ public interface ICallCenterAgentRepository {
     boolean updateStatus(Long id, AgentStatus newStatus);
 
     void incrementTotalCalls(Long id);
+
+    void updateTotalTimeNotReady(Long id, Long totalTimeNotReady);
 }

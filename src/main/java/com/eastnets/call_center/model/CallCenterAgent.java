@@ -14,6 +14,7 @@ public class CallCenterAgent {
 
     public CallCenterAgent() {
         resetStatusDuration();
+        this.totalTimeNotReady = 0L;
     }
 
     public Long getId() {
@@ -85,4 +86,7 @@ public class CallCenterAgent {
         return totalTimeNotReady;
     }
 
+    public void accumulateNotReadyTime(long durationInSeconds) {
+        this.totalTimeNotReady += durationInSeconds;
+    }
 }
