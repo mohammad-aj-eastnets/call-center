@@ -5,7 +5,7 @@
     <artifactId>call-center</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>call-center-management-system Maven Webapp</name>
+    <name>call-center Maven Webapp</name>
     <url>http://maven.apache.org</url>
 
     <dependencies>
@@ -115,6 +115,18 @@
             <artifactId>weld-servlet-core</artifactId>
             <version>3.1.9.Final</version>
         </dependency>
+
+        <dependency>
+            <groupId>net.sf.jasperreports</groupId>
+            <artifactId>jasperreports</artifactId>
+            <version>6.20.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.lowagie</groupId>
+            <artifactId>itext</artifactId>
+            <version>2.1.7</version>
+        </dependency>
+
 
 
     </dependencies>
