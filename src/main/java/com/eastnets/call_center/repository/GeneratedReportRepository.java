@@ -90,4 +90,10 @@ public class GeneratedReportRepository implements IGeneratedReportRepository {
         String sql = "SELECT * FROM generated_reports";
         return namedParameterJdbcTemplate.query(sql, new GeneratedReportMapper());
     }
+
+    @Override
+    public void truncateGeneratedReports() {
+        String truncateGeneratedReports = "TRUNCATE TABLE generated_reports";
+        namedParameterJdbcTemplate.getJdbcTemplate().execute(truncateGeneratedReports);
+    }
 }

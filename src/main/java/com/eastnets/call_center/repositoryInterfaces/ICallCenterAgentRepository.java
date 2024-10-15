@@ -16,4 +16,6 @@ public interface ICallCenterAgentRepository {
     void incrementTotalCalls(Long id);
 
     void updateTotalTimeNotReady(Long id, Long totalTimeNotReady);
+
+    void resetAgents();
 }

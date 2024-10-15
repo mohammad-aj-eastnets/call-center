@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.List;
 
 @Repository
@@ -105,5 +106,22 @@ public class CallCenterAgentRepository implements ICallCenterAgentRepository {
         params.addValue("totalNotReadyTime", totalNotReadyTime);
         params.addValue("id", id);
         namedParameterJdbcTemplate.update(sql, params);
+    }
+
+    @Override
+    public void resetAgents() {
+        String resetAgentsStatus = "UPDATE Agents SET status='NOT_READY'";
+        String resetAgentsTime = "UPDATE Agents SET time=GETDATE()";
+        String resetTotalNumberOfCalls = "UPDATE Agents SET totalNumberOfCalls=0";
+        String resetTotalReadyTime = "UPDATE Agents SET totalReadyTime=0";
+        String resetTotalNotReadyTime = "UPDATE Agents SET totalNotReadyTime=0";
+        String resetTotalOnCallTime = "UPDATE Agents SET totalOnCallTime=0";
+
+        namedParameterJdbcTemplate.update(resetAgentsStatus, new HashMap<>());
+        namedParameterJdbcTemplate.update(resetAgentsTime, new HashMap<>());
+        namedParameterJdbcTemplate.update(resetTotalNumberOfCalls, new HashMap<>());
+        namedParameterJdbcTemplate.update(resetTotalReadyTime, new HashMap<>());
+        namedParameterJdbcTemplate.update(resetTotalNotReadyTime, new HashMap<>());
+        namedParameterJdbcTemplate.update(resetTotalOnCallTime, new HashMap<>());
     }
 }

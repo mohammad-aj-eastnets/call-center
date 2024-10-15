@@ -8,4 +8,6 @@ public interface ICallRepository {
     Call findById(int callID);
     List<Call> findAll();
     void update(Call call);
+
+    void truncateCalls();
 }

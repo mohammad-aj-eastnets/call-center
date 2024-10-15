@@ -20,7 +20,6 @@ public class JasperReportService implements IJasperReportService {
 
     @Override
     public byte[] generatePdfReport(List<GeneratedReport> reports) throws JRException {
-        // Create JasperDesign
         JasperDesign jasperDesign = new JasperDesign();
         jasperDesign.setName("GeneratedReport");
         jasperDesign.setPageWidth(595);
@@ -80,20 +79,15 @@ public class JasperReportService implements IJasperReportService {
         addTextField(detailBand, "avgRecOnTotal", 480);
         ((JRDesignSection) jasperDesign.getDetailSection()).addBand(detailBand);
 
-        // Compile the design
         JasperReport jasperReport = JasperCompileManager.compileReport(jasperDesign);
 
-        // Create a data source from the report data
         JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(reports);
 
-        // Parameters for the report
         Map<String, Object> parameters = new HashMap<>();
         parameters.put("createdBy", "Call Center Management System");
 
-        // Fill the report with data
         JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
 
-        // Export the report to a byte array
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         JasperExportManager.exportReportToPdfStream(jasperPrint, byteArrayOutputStream);
 

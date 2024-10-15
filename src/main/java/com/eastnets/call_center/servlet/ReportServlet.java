@@ -21,15 +21,13 @@ public class ReportServlet extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
-        System.out.println("Initializing ReportServlet");
         WebApplicationContext context = WebApplicationContextUtils.getRequiredWebApplicationContext(getServletContext());
         generatedReportService = context.getBean(GeneratedReportService.class);
         jasperReportService = context.getBean(JasperReportService.class);
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("ReportServlet doGet method called");
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws  IOException {
         List<GeneratedReport> reports = generatedReportService.getAllReports();
         if (reports == null || reports.isEmpty()) {
             resp.sendError(HttpServletResponse.SC_NO_CONTENT, "No reports available to generate PDF");
@@ -44,7 +42,7 @@ public class ReportServlet extends HttpServlet {
                 return;
             }
         } catch (JRException e) {
-            e.printStackTrace(); // Log the exception for debugging
+            e.printStackTrace();
             resp.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error generating PDF");
             return;
         }

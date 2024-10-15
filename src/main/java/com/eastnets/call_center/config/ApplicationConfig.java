@@ -6,11 +6,7 @@ import com.eastnets.call_center.repositoryInterfaces.ICallRepository;
 import com.eastnets.call_center.repositoryInterfaces.IGeneratedReportRepository;
 import com.eastnets.call_center.repositoryInterfaces.ISupervisorRepository;
 import com.eastnets.call_center.service.*;
-import com.eastnets.call_center.serviceInterfaces.ICallCenterAgentService;
-import com.eastnets.call_center.serviceInterfaces.ICallService;
-import com.eastnets.call_center.serviceInterfaces.IGeneratedReportService;
-import com.eastnets.call_center.serviceInterfaces.IJasperReportService;
-import com.eastnets.call_center.serviceInterfaces.ISupervisorService;
+import com.eastnets.call_center.serviceInterfaces.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -68,4 +64,14 @@ public class ApplicationConfig {
     public IJasperReportService jasperReportService() {
         return new JasperReportService();
     }
+
+    @Bean
+    public IDashboardService dashboardService(ICallService callService, ICallCenterAgentService agentService) {
+        return new DashboardService(callService, agentService);
+    }
+
+    public IResetService resetService(ICallCenterAgentRepository agentRepository, ICallRepository callRepository, IGeneratedReportRepository generatedReportRepository) {
+        return new ResetService(agentRepository,callRepository,generatedReportRepository);
+    }
+
 }

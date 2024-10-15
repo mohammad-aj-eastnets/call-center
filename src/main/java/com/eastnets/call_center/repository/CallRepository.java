@@ -73,4 +73,10 @@ public class CallRepository implements ICallRepository {
         String sql = "SELECT * FROM calls";
         return namedParameterJdbcTemplate.query(sql, new CallMapper());
     }
+
+    @Override
+    public void truncateCalls() {
+        String truncateCalls = "TRUNCATE TABLE calls";
+        namedParameterJdbcTemplate.getJdbcTemplate().execute(truncateCalls);
+    }
 }

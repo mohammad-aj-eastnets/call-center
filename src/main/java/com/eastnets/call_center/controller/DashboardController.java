@@ -4,9 +4,7 @@ import com.eastnets.call_center.enums.AgentStatus;
 import com.eastnets.call_center.model.Call;
 import com.eastnets.call_center.model.CallCenterAgent;
 import com.eastnets.call_center.model.GeneratedReport;
-import com.eastnets.call_center.serviceInterfaces.ICallCenterAgentService;
-import com.eastnets.call_center.serviceInterfaces.ICallService;
-import com.eastnets.call_center.serviceInterfaces.IGeneratedReportService;
+import com.eastnets.call_center.serviceInterfaces.*;
 import org.primefaces.model.chart.PieChartModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -30,6 +28,8 @@ public class DashboardController implements Serializable {
     private ICallCenterAgentService agentService;
     private ICallService callService;
     private IGeneratedReportService reportService;
+    private IDashboardService dashboardService;
+    private IResetService resetService;
 
     private List<CallCenterAgent> agents;
     private List<Call> calls;
@@ -55,6 +55,16 @@ public class DashboardController implements Serializable {
         this.reportService = reportService;
     }
 
+    @Autowired
+    public void setDashboardService(IDashboardService dashboardService) {
+        this.dashboardService = dashboardService;
+    }
+
+    @Autowired
+    public void setResetService(IResetService resetService) {
+        this.resetService = resetService;
+    }
+
     @PostConstruct
     public void init() {
         if (agentService == null) {
@@ -65,6 +75,12 @@ public class DashboardController implements Serializable {
         }
         if (reportService == null) {
             throw new IllegalStateException("reportService is not properly initialized");
+        }
+        if (dashboardService == null) {
+            throw new IllegalStateException("dashboardService is not properly initialized");
+        }
+        if (resetService == null) {
+            throw new IllegalStateException("resetService is not properly initialized");
         }
         loadDashboardData();
         createPieModel();
@@ -87,8 +103,16 @@ public class DashboardController implements Serializable {
         return pieModel;
     }
 
-    public int getTotalAgents() {
-        return agents != null ? agents.size() : 0;
+    public String getAverageTalkTime() {
+        return dashboardService.getAverageTalkTime();
+    }
+
+    public String getLongestTalkTime() {
+        return dashboardService.getLongestTalkTime();
+    }
+
+    public int getTotalCalls() {
+        return dashboardService.getTotalCalls();
     }
 
     public void loadDashboardData() {
@@ -104,13 +128,7 @@ public class DashboardController implements Serializable {
         this.agents = agentService.getAllAgents();
         this.calls = callService.getAllCalls();
         this.reports = reportService.getAllReports();
-        createPieModel(); // Update pie chart data
-    }
-
-    public String getAgentById(Long id) {
-        CallCenterAgent agent = agentService.getAgentById(id);
-        FacesContext.getCurrentInstance().getExternalContext().getRequestMap().put("agent", agent);
-        return "agent";
+        createPieModel();
     }
 
     public void toggleAgentStatus(Long id) {
@@ -121,11 +139,11 @@ public class DashboardController implements Serializable {
         if (agent != null && agent.getStatus() != AgentStatus.ON_CALL) {
             agent.setReady(!agent.isReady());
             agentService.changeAgentStatus(id, agent.getStatus());
-            loadDashboardData(); // Reload the data after status change
+            loadDashboardData();
         }
     }
 
-    @Scheduled(fixedRate = 10000) // Run every 10 seconds
+    @Scheduled(fixedRate = 10000)
     public void generateCalls() {
         if (callService == null) {
             throw new IllegalStateException("callService is not properly initialized");
@@ -134,7 +152,7 @@ public class DashboardController implements Serializable {
         loadDashboardData(); // Refresh data
     }
 
-    @Scheduled(fixedRate = 60000) // Run every 60 seconds
+    @Scheduled(fixedRate = 60000)
     public void closeLongestCalls() {
         if (callService == null) {
             throw new IllegalStateException("callService is not properly initialized");
@@ -149,31 +167,18 @@ public class DashboardController implements Serializable {
             throw new IllegalStateException("reportService is not properly initialized");
         }
         reportService.generateReports();
-        loadDashboardData(); // Refresh data
+        loadDashboardData();
     }
 
     private void createPieModel() {
         if (agents == null) {
             throw new IllegalStateException("Agents list is not properly initialized");
         }
-        pieModel = new PieChartModel();
-        long readyCount = agents.stream().filter(agent -> agent.getStatus() == AgentStatus.READY).count();
-        long onCallCount = agents.stream().filter(agent -> agent.getStatus() == AgentStatus.ON_CALL).count();
-        long notReadyCount = agents.stream().filter(agent -> agent.getStatus() == AgentStatus.NOT_READY).count();
-
-        pieModel.set("Ready", readyCount);
-        pieModel.set("On Call", onCallCount);
-        pieModel.set("Not Ready", notReadyCount);
-
-        pieModel.setTitle("Agent Status Distribution");
-        pieModel.setLegendPosition("w");
-        pieModel.setShowDataLabels(true);
-        pieModel.setSeriesColors("FF9999,99CCFF,FFFF99"); // Light Red, Light Blue, Light Yellow
+        pieModel = dashboardService.createPieModel();
     }
 
     public void generatePdf() {
         try {
-            // Redirect to the ReportServlet
             FacesContext.getCurrentInstance().getExternalContext().redirect("/call-center/report");
         } catch (IOException e) {
             e.printStackTrace();

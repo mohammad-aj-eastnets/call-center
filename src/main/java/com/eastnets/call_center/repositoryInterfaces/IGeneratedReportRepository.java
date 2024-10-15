@@ -11,4 +11,6 @@ public interface IGeneratedReportRepository {
     GeneratedReport findByAgentID(long agentID);
 
     List<GeneratedReport> findAll();
+
+    void truncateGeneratedReports();
 }
