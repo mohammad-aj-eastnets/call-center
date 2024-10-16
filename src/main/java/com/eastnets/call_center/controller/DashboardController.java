@@ -17,6 +17,7 @@ import javax.inject.Named;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Named
 @SessionScope
@@ -183,5 +184,11 @@ public class DashboardController implements Serializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public String getAgentIdsAsJson() {
+        return agents.stream()
+                .map(agent -> agent.getId().toString())
+                .collect(Collectors.joining("\",\"", "[\"", "\"]"));
     }
 }

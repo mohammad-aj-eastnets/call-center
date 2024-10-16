@@ -82,9 +82,48 @@
         function resetFocus() {
             document.activeElement.blur();
         }
+
+        let timers = {};
+        let startTimes = {};
+
+        function startTimer(agentId) {
+            if (timers[agentId]) {
+                clearInterval(timers[agentId]);
+            }
+            if (!startTimes[agentId]) {
+                startTimes[agentId] = new Date().getTime();
+            }
+            timers[agentId] = setInterval(function() {
+                let currentTime = new Date().getTime();
+                let elapsedTime = currentTime - startTimes[agentId];
+                let hours = Math.floor(elapsedTime / (1000 * 60 * 60));
+                let minutes = Math.floor((elapsedTime % (1000 * 60 * 60)) / (1000 * 60));
+                let seconds = Math.floor((elapsedTime % (1000 * 60)) / 1000);
+                document.getElementById("timer-" + agentId).innerHTML =
+                    (hours &lt; 10 ? "0" : "") + hours + ":" +
+                    (minutes &lt; 10 ? "0" : "") + minutes + ":" +
+                    (seconds &lt; 10 ? "0" : "") + seconds;
+            }, 1000);
+        }
+
+        function resetTimer(agentId) {
+            if (timers[agentId]) {
+                clearInterval(timers[agentId]);
+            }
+            startTimes[agentId] = new Date().getTime();
+            document.getElementById("timer-" + agentId).innerHTML = "00:00:00";
+            startTimer(agentId);
+        }
+
+        function initializeTimers() {
+            let agentIds = JSON.parse(document.getElementById('agentIdsJson').textContent);
+            for (let i = 0; i &lt; agentIds.length; i++) {
+                startTimer(agentIds[i]);
+            }
+        }
     </script>
 </h:head>
-<h:body>
+<h:body onload="initializeTimers()">
     <h:form id="mainForm">
         <p:growl id="growl" showDetail="true" />
         <p:poll interval="1" update="@form" listener="#{dashboardController.loadDashboardData}" />
@@ -123,16 +162,19 @@
                 <p:column headerText="Status">
                     <h:outputText value="#{agent.status}" />
                 </p:column>
-                <p:column headerText="Status Duration">
-                    <h:outputText value="#{agent.statusDurationHours}h #{agent.statusDurationMinutes}m #{agent.statusDurationSeconds}s" />
-                </p:column>
                 <p:column headerText="Total Calls">
                     <h:outputText value="#{agent.totalNumberOfCalls}" />
+                </p:column>
+                <p:column headerText="Timer">
+                    <div id="timer-#{agent.id}">00:00:00</div>
+                    <script type="text/javascript">
+                        startTimer("#{agent.id}");
+                    </script>
                 </p:column>
                 <p:column>
                     <p:inputSwitch value="#{agent.ready}" onLabel="Ready" offLabel="Not Ready"
                                    rendered="#{agent.status != 'ON_CALL'}">
-                        <p:ajax listener="#{dashboardController.toggleAgentStatus(agent.id)}" update=":mainForm:agentsTable" oncomplete="resetFocus()" />
+                        <p:ajax listener="#{dashboardController.toggleAgentStatus(agent.id)}" update=":mainForm:agentsTable" oncomplete="resetFocus(); resetTimer('#{agent.id}');" />
                     </p:inputSwitch>
                 </p:column>
             </p:dataTable>
@@ -140,5 +182,10 @@
 
         <h:commandButton value="Generate PDF Report" action="#{dashboardController.generatePdf}" styleClass="generate-pdf-button" ajax="false" />
     </h:form>
+
+    <!-- Embed the agent IDs as a JSON array -->
+    <h:outputScript id="agentIdsJson" escape="false">
+        #{dashboardController.agentIdsAsJson}
+    </h:outputScript>
 </h:body>
 </html>

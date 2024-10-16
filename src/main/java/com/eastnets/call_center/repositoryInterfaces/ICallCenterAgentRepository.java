@@ -12,10 +12,9 @@ public interface ICallCenterAgentRepository {
     void delete(Long id);
     Long getStatusDuration(Long id, String status);
     boolean updateStatus(Long id, AgentStatus newStatus);
-
     void incrementTotalCalls(Long id);
-
-    void updateTotalTimeNotReady(Long id, Long totalTimeNotReady);
-
+    void updateTotalTimeReady(Long id, Long totalReadyTime);
+    void updateTotalTimeOnCall(Long id, Long totalOnCallTime);
+    void updateTotalTimeNotReady(Long id, Long totalNotReadyTime);
     void resetAgents();
 }

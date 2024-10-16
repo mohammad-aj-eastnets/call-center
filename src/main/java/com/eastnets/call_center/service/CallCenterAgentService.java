@@ -48,13 +48,33 @@ public class CallCenterAgentService implements ICallCenterAgentService {
     public boolean changeAgentStatus(Long id, AgentStatus newStatus) {
         CallCenterAgent agent = getAgentById(id);
         if (agent != null) {
-            if (agent.getStatus() == AgentStatus.NOT_READY) {
-                long durationInSeconds = getAgentStatusDuration(id, AgentStatus.NOT_READY.name());
-                agent.accumulateNotReadyTime(durationInSeconds);
-                callCenterAgentRepository.updateTotalTimeNotReady(id, agent.getTotalTimeNotReady());
+            long currentTime = System.currentTimeMillis() / 1000;
+            long durationInSeconds = currentTime - agent.getLastStatusChangeTimestamp();
+
+            // Update the status duration based on the previous status
+            switch (agent.getStatus()) {
+                case READY:
+                    agent.accumulateReadyTime(durationInSeconds);
+                    break;
+                case ON_CALL:
+                    agent.accumulateOnCallTime(durationInSeconds);
+                    break;
+                case NOT_READY:
+                    agent.accumulateNotReadyTime(durationInSeconds);
+                    break;
             }
+
+            // Update the agent's status and last status change timestamp
             agent.setStatus(newStatus);
-            return callCenterAgentRepository.updateStatus(id, newStatus);
+            agent.setLastStatusChangeTimestamp(currentTime);
+
+            // Update the database
+            callCenterAgentRepository.updateStatus(id, newStatus);
+            callCenterAgentRepository.updateTotalTimeNotReady(id, agent.getTotalTimeNotReady());
+            callCenterAgentRepository.updateTotalTimeReady(id, agent.getTotalTimeReady());
+            callCenterAgentRepository.updateTotalTimeOnCall(id, agent.getTotalTimeOnCall());
+
+            return true;
         }
         return false;
     }

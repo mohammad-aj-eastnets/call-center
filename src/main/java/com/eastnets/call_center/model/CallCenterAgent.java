@@ -6,15 +6,17 @@ public class CallCenterAgent {
     private Long id;
     private String name;
     private AgentStatus status;
-    private long statusDurationSeconds;
-    private long statusDurationMinutes;
-    private long statusDurationHours;
     private Long totalNumberOfCalls;
+    private Long totalTimeReady;
+    private Long totalTimeOnCall;
     private Long totalTimeNotReady;
+    private long lastStatusChangeTimestamp; // New field
 
     public CallCenterAgent() {
-        resetStatusDuration();
+        this.totalTimeReady = 0L;
+        this.totalTimeOnCall = 0L;
         this.totalTimeNotReady = 0L;
+        this.lastStatusChangeTimestamp = System.currentTimeMillis() / 1000; // Initialize with current time
     }
 
     public Long getId() {
@@ -39,7 +41,7 @@ public class CallCenterAgent {
 
     public void setStatus(AgentStatus status) {
         this.status = status;
-        resetStatusDuration();
+        this.lastStatusChangeTimestamp = System.currentTimeMillis() / 1000; // Update timestamp on status change
     }
 
     public boolean isReady() {
@@ -48,38 +50,31 @@ public class CallCenterAgent {
 
     public void setReady(boolean ready) {
         this.status = ready ? AgentStatus.READY : AgentStatus.NOT_READY;
+        this.lastStatusChangeTimestamp = System.currentTimeMillis() / 1000; // Update timestamp on status change
     }
 
-    public long getStatusDurationSeconds() {
-        return statusDurationSeconds;
-    }
-
-    public long getStatusDurationMinutes() {
-        return statusDurationMinutes;
-    }
-
-    public long getStatusDurationHours() {
-        return statusDurationHours;
-    }
-
-    public void setTotalNumberOfCalls(long totalNumberOfCalls) {
-        this.totalNumberOfCalls = totalNumberOfCalls;
-    }
-
-    public long getTotalNumberOfCalls() {
+    public Long getTotalNumberOfCalls() {
         return totalNumberOfCalls;
     }
 
-    private void resetStatusDuration() {
-        this.statusDurationSeconds = 0;
-        this.statusDurationMinutes = 0;
-        this.statusDurationHours = 0;
+    public void setTotalNumberOfCalls(Long totalNumberOfCalls) {
+        this.totalNumberOfCalls = totalNumberOfCalls;
     }
 
-    public void updateStatusDuration(long durationInSeconds) {
-        this.statusDurationSeconds = durationInSeconds % 60;
-        this.statusDurationMinutes = (durationInSeconds / 60) % 60;
-        this.statusDurationHours = durationInSeconds / 3600;
+    public Long getTotalTimeReady() {
+        return totalTimeReady;
+    }
+
+    public void accumulateReadyTime(long durationInSeconds) {
+        this.totalTimeReady += durationInSeconds;
+    }
+
+    public Long getTotalTimeOnCall() {
+        return totalTimeOnCall;
+    }
+
+    public void accumulateOnCallTime(long durationInSeconds) {
+        this.totalTimeOnCall += durationInSeconds;
     }
 
     public Long getTotalTimeNotReady() {
@@ -88,5 +83,13 @@ public class CallCenterAgent {
 
     public void accumulateNotReadyTime(long durationInSeconds) {
         this.totalTimeNotReady += durationInSeconds;
+    }
+
+    public long getLastStatusChangeTimestamp() {
+        return lastStatusChangeTimestamp;
+    }
+
+    public void setLastStatusChangeTimestamp(long lastStatusChangeTimestamp) {
+        this.lastStatusChangeTimestamp = lastStatusChangeTimestamp;
     }
 }
